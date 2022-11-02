@@ -1,0 +1,121 @@
+import 'package:caridiskon/BLoC/top_20_penawaran_page/top_20_penawaran_BLoC.dart';
+import 'package:caridiskon/data/top_20_penawaran.dart';
+import 'package:caridiskon/helper/color.dart';
+import 'package:caridiskon/helper/page_routing/application.dart';
+import 'package:caridiskon/widget/card.dart';
+import 'package:caridiskon/widget/filter.dart';
+import 'package:caridiskon/widget/search_bar.dart';
+import 'package:dropdown_plus/dropdown_plus.dart';
+import 'package:flutter/material.dart';
+import 'package:caridiskon/helper/sizes.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+Widget top20PenawaranContent1(BuildContext context, String route) {
+  return Container(
+    alignment: Alignment.center,
+    //color: Color.fromARGB(255, 201, 199, 199),
+    height: Sizes.dp59(context),
+    //width: Sizes.dp40(context) + Sizes.dp14(context),
+    child: Column(
+      //mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          "Filter:",
+          textAlign: TextAlign.start,
+          style: GoogleFonts.inter(
+            textStyle: TextStyle(
+              color: black,
+              fontSize: Sizes.dp4(context),
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+        ),
+        SizedBox(height: Sizes.dp2(context)),
+        BlocBuilder<FilterTipe, String>(
+          builder: (context, state) {
+            return filter1(context, state);
+          },
+        ),
+        BlocBuilder<FilterKategori, String>(
+          builder: (context, state) {
+            return filter2(context, state);
+          },
+        ),
+        BlocBuilder<FilterToko, String>(
+          builder: (context, state) {
+            return filter3(context, state);
+          },
+        ),
+        SizedBox(height: Sizes.dp2(context)),
+        BlocBuilder<FilterAble, String>(
+          builder: (context, state) {
+            return Container(
+              //color: Colors.amber,
+              alignment: Alignment.centerLeft,
+              padding: EdgeInsets.only(left: Sizes.dp1(context)),
+              width: Sizes.dp48(context) + Sizes.dp14(context),
+              child: InkWell(
+                borderRadius: BorderRadius.circular(Sizes.dp2(context)),
+                onTap: () {
+                  BlocProvider.of<FilterButton>(context).add("Cari");
+                  BlocProvider.of<FilterName>(context).add("Cari");
+                },
+                child: Container(
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    color: orange,
+                    border: Border.all(),
+                    borderRadius: BorderRadius.circular(Sizes.dp1(context)),
+                  ),
+                  height: Sizes.dp10(context),
+                  width: Sizes.dp40(context),
+                  child: Text(
+                    "Cari",
+                    style: GoogleFonts.inter(
+                      textStyle: TextStyle(color: black),
+                      fontSize: Sizes.dp4(context),
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+        SizedBox(height: Sizes.dp2(context)),
+        Container(
+          //color: Colors.amber,
+          alignment: Alignment.centerLeft,
+          padding: EdgeInsets.only(left: Sizes.dp1(context)),
+          width: Sizes.dp48(context) + Sizes.dp14(context),
+          child: InkWell(
+            borderRadius: BorderRadius.circular(Sizes.dp2(context)),
+            onTap: () {
+              Application.router.navigateTo(context, "/Top 20 Penawaran");
+            },
+            child: Container(
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: lightGrey,
+                border: Border.all(),
+                borderRadius: BorderRadius.circular(Sizes.dp1(context)),
+              ),
+              height: Sizes.dp10(context),
+              width: Sizes.dp40(context),
+              child: Text(
+                "Reset",
+                style: GoogleFonts.inter(
+                  textStyle: TextStyle(color: black),
+                  fontSize: Sizes.dp4(context),
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+          ),
+        ),
+      ],
+    ),
+  );
+}
