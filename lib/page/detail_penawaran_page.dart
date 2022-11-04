@@ -15,9 +15,8 @@ import 'package:footer/footer_view.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class DetailPenawaranPage extends StatelessWidget {
-  DetailPenawaranPage({super.key, required this.id, required this.route});
+  DetailPenawaranPage({super.key, required this.id});
   String id;
-  String route;
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
@@ -42,7 +41,7 @@ class DetailPenawaranPage extends StatelessWidget {
             children: [
               BlocBuilder<DetailPenawaran, Top20Penawaran>(
                 builder: (context, state) {
-                  return blocBuilderFunction(context, route);
+                  return blocBuilderFunction(context);
                 },
               ),
             ],
@@ -52,17 +51,16 @@ class DetailPenawaranPage extends StatelessWidget {
     );
   }
 
-  Widget blocBuilderFunction(BuildContext context, String route) {
+  Widget blocBuilderFunction(BuildContext context) {
     BlocProvider.of<DetailPenawaran>(context).add(id);
     return BlocBuilder<DetailPenawaran, Top20Penawaran>(
       builder: (context, state) {
-        return detailPenawaranPageView(context, state, route);
+        return detailPenawaranPageView(context, state);
       },
     );
   }
 
-  Widget detailPenawaranPageView(
-      BuildContext context, Top20Penawaran data, String route) {
+  Widget detailPenawaranPageView(BuildContext context, Top20Penawaran data) {
     BlocProvider.of<DetailPenawaran>(context).add(id);
     return SingleChildScrollView(
       child: Column(
@@ -75,7 +73,7 @@ class DetailPenawaranPage extends StatelessWidget {
             // crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(width: Sizes.dp10(context)),
-              detailPenawaranContent1(context, data, route),
+              detailPenawaranContent1(context, data),
               detailPenawaranContent2(context, data),
               SizedBox(height: Sizes.dp4(context)),
               detailPenawaranContent3(context, data),

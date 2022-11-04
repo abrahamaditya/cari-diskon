@@ -1,7 +1,6 @@
 import 'package:caridiskon/BLoC/top_20_penawaran_page/detail_penawaran_page_BLoC.dart';
 import 'package:caridiskon/BLoC/top_20_penawaran_page/top_20_penawaran_BLoC.dart';
 import 'package:caridiskon/helper/color.dart';
-import 'package:caridiskon/helper/page_routing/application.dart';
 import 'package:caridiskon/helper/sizes.dart';
 import 'package:caridiskon/widget/app_navigation_bar.dart';
 import 'package:caridiskon/widget/footer.dart';
@@ -17,8 +16,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Top20PenawaranPage extends StatelessWidget {
-  Top20PenawaranPage({super.key, required this.route});
-  String route;
+  Top20PenawaranPage({super.key});
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
@@ -46,7 +44,7 @@ class Top20PenawaranPage extends StatelessWidget {
               padding: EdgeInsets.zero,
             ),
             children: [
-              top20PenawaranPageView(context, route),
+              top20PenawaranPageView(context),
             ],
           ),
         ),
@@ -54,7 +52,7 @@ class Top20PenawaranPage extends StatelessWidget {
     );
   }
 
-  Widget top20PenawaranPageView(BuildContext context, String route) {
+  Widget top20PenawaranPageView(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
         children: [
@@ -64,42 +62,6 @@ class Top20PenawaranPage extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  SizedBox(width: Sizes.dp36(context) + Sizes.dp4(context)),
-                  InkWell(
-                    hoverColor: Colors.transparent,
-                    highlightColor: Colors.transparent,
-                    onTap: () {
-                      Application.router.navigateTo(context, "/");
-                    },
-                    child: Text(
-                      "Halaman Utama",
-                      textAlign: TextAlign.start,
-                      style: GoogleFonts.inter(
-                        textStyle: TextStyle(
-                          color: lightGrey,
-                          fontSize: Sizes.dp4(context),
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Text(
-                    " / " + route,
-                    textAlign: TextAlign.start,
-                    style: GoogleFonts.inter(
-                      textStyle: TextStyle(
-                        color: lightGrey,
-                        fontSize: Sizes.dp4(context),
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: Sizes.dp2(context)),
               Row(
                 children: [
                   SizedBox(width: Sizes.dp36(context) + Sizes.dp4(context)),
@@ -124,7 +86,7 @@ class Top20PenawaranPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(width: Sizes.dp30(context)),
-              top20PenawaranContent1(context, route),
+              top20PenawaranContent1(context),
               SizedBox(width: Sizes.dp10(context)),
               Column(
                 children: [

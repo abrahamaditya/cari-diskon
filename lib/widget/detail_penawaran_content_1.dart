@@ -1,13 +1,11 @@
 import 'package:caridiskon/data/top_20_penawaran.dart';
 import 'package:caridiskon/helper/color.dart';
-import 'package:caridiskon/helper/page_routing/application.dart';
 import 'package:flutter/material.dart';
 import 'package:caridiskon/helper/sizes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
-Widget detailPenawaranContent1(
-    BuildContext context, Top20Penawaran data, String route) {
+Widget detailPenawaranContent1(BuildContext context, Top20Penawaran data) {
   return Container(
     alignment: Alignment.center,
     //color: Color.fromARGB(255, 201, 199, 199),
@@ -17,58 +15,6 @@ Widget detailPenawaranContent1(
       //mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Row(
-          children: [
-            InkWell(
-              hoverColor: Colors.transparent,
-              highlightColor: Colors.transparent,
-              onTap: () {
-                Application.router.navigateTo(context, "/");
-              },
-              child: Text(
-                "Halaman Utama",
-                textAlign: TextAlign.start,
-                style: GoogleFonts.inter(
-                  textStyle: TextStyle(
-                    color: lightGrey,
-                    fontSize: Sizes.dp4(context),
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-            ),
-            InkWell(
-              hoverColor: Colors.transparent,
-              highlightColor: Colors.transparent,
-              onTap: () {
-                Application.router.navigateTo(context, "/$route");
-              },
-              child: Text(
-                " / " + route,
-                textAlign: TextAlign.start,
-                style: GoogleFonts.inter(
-                  textStyle: TextStyle(
-                    color: lightGrey,
-                    fontSize: Sizes.dp4(context),
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-            ),
-            Text(
-              " / " + data.brand,
-              textAlign: TextAlign.start,
-              style: GoogleFonts.inter(
-                textStyle: TextStyle(
-                  color: lightGrey,
-                  fontSize: Sizes.dp4(context),
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-            ),
-          ],
-        ),
-        SizedBox(height: Sizes.dp2(context)),
         Text(
           data.brand,
           textAlign: TextAlign.start,

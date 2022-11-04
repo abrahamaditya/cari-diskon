@@ -1,4 +1,3 @@
-import 'package:caridiskon/data/top_20_penawaran.dart';
 import 'package:caridiskon/helper/color.dart';
 import 'package:caridiskon/helper/page_routing/application.dart';
 import 'package:flutter/material.dart';
@@ -161,19 +160,10 @@ class cardV6 extends StatelessWidget {
                 child: InkWell(
                   borderRadius: BorderRadius.circular(Sizes.dp2(context)),
                   onTap: () {
-                    // BlocProvider.of<BreadCrumb>(context)
-                    //     .add("Top 20 Penawaran");
                     Application.router.navigateTo(
                       context,
-                      "/Top 20 Penawaran/$id",
+                      "/top20penawaran/$id",
                     );
-                    // Application.router.navigateTo(
-                    //   context,
-                    //   "/top20penawaran/detailpenawaran",
-                    //   routeSettings: const RouteSettings(
-                    //     arguments: "test",
-                    //   ),
-                    // );
                   },
                   child: Container(
                     alignment: Alignment.center,

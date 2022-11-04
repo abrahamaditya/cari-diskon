@@ -30,7 +30,7 @@ class AppNavigationBar extends StatelessWidget {
           SizedBox(width: Sizes.dp2(context)),
           InkWell(
             onTap: () {
-              Application.router.navigateTo(context, "/Top 20 Penawaran");
+              Application.router.navigateTo(context, "/top20penawaran");
             },
             child: Text(
               "Top 20 Penawaran",
@@ -81,7 +81,7 @@ class AppNavigationBar extends StatelessWidget {
           SizedBox(width: Sizes.dp8(context)),
           InkWell(
             onTap: () {
-              Application.router.navigateTo(context, "/test");
+              Application.router.navigateTo(context, "/login");
             },
             child: Container(
               alignment: Alignment.center,

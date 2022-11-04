@@ -1,12 +1,12 @@
-// Flutter Library
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'route_handlers.dart';
 
 class Routes {
   static String home = "/";
-  static String top20Penawaran = "/:route";
-  static String detailPenawaran = "/:route/:id";
+  static String top20Penawaran = "/top20penawaran";
+  static String detailPenawaran = "/top20penawaran/:id";
+  static String login = "/login";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(

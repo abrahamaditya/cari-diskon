@@ -11,8 +11,7 @@ var homeHandler = Handler(
 
 var top20PenawaranHandler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
-  String data = params["route"]![0];
-  return Top20PenawaranPage(route: data);
+  return Top20PenawaranPage();
 });
 
 // Approach 1
@@ -28,8 +27,7 @@ var top20PenawaranHandler = Handler(
 // Approach 2
 var detailPenawaranHandler = Handler(
   handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
-    String data2 = params["route"]![0];
     String data = params["id"]![0];
-    return DetailPenawaranPage(id: data, route: data2);
+    return DetailPenawaranPage(id: data);
   },
 );

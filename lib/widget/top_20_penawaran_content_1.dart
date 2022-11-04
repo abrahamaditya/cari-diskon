@@ -1,17 +1,13 @@
 import 'package:caridiskon/BLoC/top_20_penawaran_page/top_20_penawaran_BLoC.dart';
-import 'package:caridiskon/data/top_20_penawaran.dart';
 import 'package:caridiskon/helper/color.dart';
 import 'package:caridiskon/helper/page_routing/application.dart';
-import 'package:caridiskon/widget/card.dart';
 import 'package:caridiskon/widget/filter.dart';
-import 'package:caridiskon/widget/search_bar.dart';
-import 'package:dropdown_plus/dropdown_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:caridiskon/helper/sizes.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-Widget top20PenawaranContent1(BuildContext context, String route) {
+Widget top20PenawaranContent1(BuildContext context) {
   return Container(
     alignment: Alignment.center,
     //color: Color.fromARGB(255, 201, 199, 199),
@@ -93,7 +89,7 @@ Widget top20PenawaranContent1(BuildContext context, String route) {
           child: InkWell(
             borderRadius: BorderRadius.circular(Sizes.dp2(context)),
             onTap: () {
-              Application.router.navigateTo(context, "/Top 20 Penawaran");
+              Application.router.navigateTo(context, "/top20penawaran");
             },
             child: Container(
               alignment: Alignment.center,

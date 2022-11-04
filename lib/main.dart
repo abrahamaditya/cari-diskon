@@ -1,8 +1,6 @@
-import 'package:caridiskon/helper/color.dart';
 import 'package:caridiskon/page/home_page.dart';
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
-
 import 'helper/page_routing/application.dart';
 import 'helper/page_routing/routes.dart';
 

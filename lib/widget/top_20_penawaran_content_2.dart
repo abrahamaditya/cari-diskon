@@ -1,9 +1,5 @@
 import 'package:caridiskon/BLoC/top_20_penawaran_page/top_20_penawaran_BLoC.dart';
 import 'package:caridiskon/helper/color.dart';
-import 'package:caridiskon/helper/page_routing/application.dart';
-import 'package:caridiskon/widget/card.dart';
-import 'package:caridiskon/widget/filter.dart';
-import 'package:caridiskon/widget/search_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:caridiskon/helper/sizes.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
