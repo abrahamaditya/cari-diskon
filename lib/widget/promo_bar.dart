@@ -57,74 +57,75 @@ Widget promoBar(BuildContext context) {
                 onTap: () {
                   FlutterClipboard.copy("NEWUSER321").then(
                     (value) => print("Copy Successful"),
-                    // Dialogs.materialDialog(
-                    //           color: Colors.white,
-                    //           title: 'Copied!',
-                    //           titleStyle: GoogleFonts.inter(
-                    //             textStyle: TextStyle(
-                    //               color: black,
-                    //               fontSize: Sizes.dp5(context),
-                    //               fontWeight: FontWeight.w500,
-                    //             ),
-                    //           ),
-                    //           lottieBuilder: Lottie.asset(
-                    //             './animation/successful-tick.json',
-                    //             fit: BoxFit.contain,
-                    //             height: Sizes.dp1(context),
-                    //             width: Sizes.dp1(context),
-                    //           ),
-                    //           dialogWidth: kIsWeb ? 0.1 : null,
-                    //           context: context,
-                    //           actions: [
-                    //             IconsButton(
-                    //               onPressed: () {
-                    //                 Navigator.of(context).pop();
-                    //               },
-                    //               text: 'Claim',
-                    //               iconData: Icons.done,
-                    //               color: Colors.blue,
-                    //               textStyle: TextStyle(color: Colors.white),
-                    //               iconColor: Colors.white,
-                    //             ),
-                    //           ],
-                    //         ),
-                    // showDialog(
-                    //   context: context,
-                    //   builder: (context) {
-                    //     return AlertDialog(
-                    //       content: Text(
-                    //         "Copied!",
-                    //         textAlign: TextAlign.start,
-                    //         style: GoogleFonts.inter(
-                    //           textStyle: TextStyle(
-                    //             color: black,
-                    //             fontSize: Sizes.dp7(context),
-                    //             fontWeight: FontWeight.w600,
-                    //           ),
-                    //         ),
-                    //       ),
-                    //       actions: [
-                    //         TextButton(
-                    //           onPressed: () {
-                    //             Navigator.pop(context);
-                    //           },
-                    //           child: Text(
-                    //             "Close",
-                    //             textAlign: TextAlign.start,
-                    //             style: GoogleFonts.inter(
-                    //               textStyle: TextStyle(
-                    //                 color: black,
-                    //                 fontSize: Sizes.dp4(context),
-                    //                 fontWeight: FontWeight.w500,
-                    //               ),
-                    //             ),
-                    //           ),
-                    //         ),
-                    //       ],
-                    //     );
-                    //   },
-                    // ),
                   );
+                  Dialogs.materialDialog(
+                    color: Colors.white,
+                    title: 'Yey! Kode berhasil disalin!',
+                    titleStyle: GoogleFonts.inter(
+                      textStyle: TextStyle(
+                        color: black,
+                        fontSize: Sizes.dp5(context),
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    lottieBuilder: Lottie.asset(
+                      './animation/successful-tick.json',
+                      frameRate: FrameRate(60),
+                      fit: BoxFit.contain,
+                      // height: Sizes.dp1(context),
+                      // width: Sizes.dp1(context),
+                    ),
+                    dialogWidth: kIsWeb ? 0.1 : null,
+                    context: context,
+                    // actions: [
+                    //   IconsButton(
+                    //     onPressed: () {
+                    //       Navigator.of(context).pop();
+                    //     },
+                    //     text: 'Tutup',
+                    //     iconData: Icons.done,
+                    //     color: Colors.blue,
+                    //     textStyle: TextStyle(color: Colors.white),
+                    //     iconColor: Colors.white,
+                    //   ),
+                    // ],
+                  );
+                  // showDialog(
+                  //   context: context,
+                  //   builder: (context) {
+                  //     return AlertDialog(
+                  //       content: Text(
+                  //         "Kode berhasil di salin!",
+                  //         textAlign: TextAlign.start,
+                  //         style: GoogleFonts.inter(
+                  //           textStyle: TextStyle(
+                  //             color: black,
+                  //             fontSize: Sizes.dp7(context),
+                  //             fontWeight: FontWeight.w600,
+                  //           ),
+                  //         ),
+                  //       ),
+                  //       actions: [
+                  //         TextButton(
+                  //           onPressed: () {
+                  //             Navigator.pop(context);
+                  //           },
+                  //           child: Text(
+                  //             "Tutup",
+                  //             textAlign: TextAlign.start,
+                  //             style: GoogleFonts.inter(
+                  //               textStyle: TextStyle(
+                  //                 color: black,
+                  //                 fontSize: Sizes.dp4(context),
+                  //                 fontWeight: FontWeight.w500,
+                  //               ),
+                  //             ),
+                  //           ),
+                  //         ),
+                  //       ],
+                  //     );
+                  //   },
+                  // );
                 },
                 child: Text(
                   "Salin kode",

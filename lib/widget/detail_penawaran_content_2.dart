@@ -1,10 +1,13 @@
 import 'package:caridiskon/data/top_20_penawaran.dart';
 import 'package:caridiskon/helper/color.dart';
 import 'package:clipboard/clipboard.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:caridiskon/helper/sizes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'dart:html' as html;
+
+import 'package:material_dialogs/material_dialogs.dart';
 
 Widget detailPenawaranContent2(BuildContext context, Top20Penawaran data) {
   return Container(
@@ -247,58 +250,85 @@ Widget detailPenawaranContent2(BuildContext context, Top20Penawaran data) {
                         ),
                         Align(
                           alignment: Alignment.center,
-                          child: InkWell(
-                            onTap: () {
-                              //Application.router.navigateTo(context, "/test");
-                            },
-                            child: Container(
-                              alignment: Alignment.center,
-                              decoration: BoxDecoration(
-                                color: white,
-                                border: Border.all(),
-                                borderRadius:
-                                    BorderRadius.circular(Sizes.dp1(context)),
-                              ),
-                              height: Sizes.dp14(context),
-                              width: Sizes.dp40(context),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    data.code,
-                                    style: GoogleFonts.inter(
-                                      textStyle: TextStyle(color: black),
-                                      fontSize: Sizes.dp5(context),
-                                      fontWeight: FontWeight.w800,
-                                    ),
+                          child: Container(
+                            alignment: Alignment.center,
+                            decoration: BoxDecoration(
+                              color: white,
+                              border: Border.all(),
+                              borderRadius:
+                                  BorderRadius.circular(Sizes.dp1(context)),
+                            ),
+                            height: Sizes.dp14(context),
+                            width: Sizes.dp40(context),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  data.code,
+                                  style: GoogleFonts.inter(
+                                    textStyle: TextStyle(color: black),
+                                    fontSize: Sizes.dp5(context),
+                                    fontWeight: FontWeight.w800,
                                   ),
-                                  SizedBox(width: Sizes.dp8(context)),
-                                  Text(
-                                    "|",
-                                    style: GoogleFonts.inter(
-                                      textStyle: TextStyle(color: lightGrey),
-                                      fontSize: Sizes.dp4(context),
-                                      fontWeight: FontWeight.w500,
-                                    ),
+                                ),
+                                SizedBox(width: Sizes.dp8(context)),
+                                Text(
+                                  "|",
+                                  style: GoogleFonts.inter(
+                                    textStyle: TextStyle(color: lightGrey),
+                                    fontSize: Sizes.dp4(context),
+                                    fontWeight: FontWeight.w500,
                                   ),
-                                  SizedBox(width: Sizes.dp4(context)),
-                                  InkWell(
-                                    onTap: () {
-                                      FlutterClipboard.copy(data.code).then(
-                                        (value) => print("Copy Successful"),
-                                      );
-                                    },
-                                    child: Text(
-                                      "Salin",
-                                      style: GoogleFonts.inter(
-                                        textStyle: TextStyle(color: green),
-                                        fontSize: Sizes.dp4(context),
-                                        fontWeight: FontWeight.w600,
+                                ),
+                                SizedBox(width: Sizes.dp4(context)),
+                                InkWell(
+                                  onTap: () {
+                                    FlutterClipboard.copy(data.code).then(
+                                      (value) => print("Copy Successful"),
+                                    );
+                                    Dialogs.materialDialog(
+                                      color: Colors.white,
+                                      title: 'Yey! Kode berhasil disalin!',
+                                      titleStyle: GoogleFonts.inter(
+                                        textStyle: TextStyle(
+                                          color: black,
+                                          fontSize: Sizes.dp5(context),
+                                          fontWeight: FontWeight.w600,
+                                        ),
                                       ),
+                                      lottieBuilder: Lottie.asset(
+                                        './animation/successful-tick.json',
+                                        frameRate: FrameRate(60),
+                                        fit: BoxFit.contain,
+                                        // height: Sizes.dp1(context),
+                                        // width: Sizes.dp1(context),
+                                      ),
+                                      dialogWidth: kIsWeb ? 0.1 : null,
+                                      context: context,
+                                      // actions: [
+                                      //   IconsButton(
+                                      //     onPressed: () {
+                                      //       Navigator.of(context).pop();
+                                      //     },
+                                      //     text: 'Tutup',
+                                      //     iconData: Icons.done,
+                                      //     color: Colors.blue,
+                                      //     textStyle: TextStyle(color: Colors.white),
+                                      //     iconColor: Colors.white,
+                                      //   ),
+                                      // ],
+                                    );
+                                  },
+                                  child: Text(
+                                    "Salin",
+                                    style: GoogleFonts.inter(
+                                      textStyle: TextStyle(color: green),
+                                      fontSize: Sizes.dp4(context),
+                                      fontWeight: FontWeight.w600,
                                     ),
                                   ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
                           ),
                         ),
