@@ -10,3 +10,5 @@ Color paleOrange = const Color.fromARGB(255, 255, 220, 128);
 Color red = const Color.fromARGB(255, 237, 10, 63);
 Color pink = const Color.fromARGB(255, 255, 99, 99);
 Color green = const Color.fromARGB(255, 13, 204, 13);
+Color mint = const Color.fromARGB(255, 185, 229, 227);
+Color teal = const Color.fromARGB(255, 0, 175, 185);

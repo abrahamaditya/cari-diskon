@@ -1,5 +1,6 @@
 import 'package:caridiskon/page/detail_penawaran_page.dart';
 import 'package:caridiskon/page/home_page.dart';
+import 'package:caridiskon/page/login_page.dart';
 import 'package:caridiskon/page/top_20_penawaran_page.dart';
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
@@ -31,3 +32,8 @@ var detailPenawaranHandler = Handler(
     return DetailPenawaranPage(id: data);
   },
 );
+
+var loginHandler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const LoginPage();
+});
