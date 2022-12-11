@@ -593,7 +593,7 @@ class ContactUsPage extends StatelessWidget {
                                         ),
                                       ),
                                       lottieBuilder: Lottie.asset(
-                                        './animation/successful-tick.json',
+                                        'assets/animation/successful-tick.json',
                                         frameRate: FrameRate(60),
                                         fit: BoxFit.contain,
                                       ),
@@ -646,7 +646,7 @@ class ContactUsPage extends StatelessWidget {
                           Row(
                             children: [
                               Image.asset(
-                                './icons/phone-call.png',
+                                'assets/icons/phone-call.png',
                                 width: Sizes.dp5(context),
                               ),
                               SizedBox(width: Sizes.dp1(context)),
@@ -667,7 +667,7 @@ class ContactUsPage extends StatelessWidget {
                           Row(
                             children: [
                               Image.asset(
-                                './icons/whatsapp.png',
+                                'assets/icons/whatsapp.png',
                                 width: Sizes.dp5(context),
                               ),
                               SizedBox(width: Sizes.dp1(context)),

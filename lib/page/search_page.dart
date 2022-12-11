@@ -109,7 +109,7 @@ class SearchPage extends StatelessWidget {
                         height: Sizes.dp50(context),
                         width: Sizes.width(context),
                         child: Lottie.asset(
-                          './animation/not-found.json',
+                          'assets/animation/not-found.json',
                           frameRate: FrameRate(60),
                           fit: BoxFit.contain,
                         ),

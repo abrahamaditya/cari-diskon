@@ -412,7 +412,7 @@ class RegisterPage extends StatelessWidget {
                                       ),
                                     ),
                                     lottieBuilder: Lottie.asset(
-                                      './animation/successful-tick.json',
+                                      'assets/animation/successful-tick.json',
                                       frameRate: FrameRate(60),
                                       fit: BoxFit.contain,
                                       // height: Sizes.dp1(context),
