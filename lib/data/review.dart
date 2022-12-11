@@ -1,7 +1,3 @@
-import 'package:caridiskon/helper/color.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-
 class Review {
   final String id;
   final String GUID;

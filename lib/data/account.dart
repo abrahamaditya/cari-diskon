@@ -1,5 +1,3 @@
-import 'package:flutter_guid/flutter_guid.dart';
-
 class Account {
   final String id;
   final String GUID;
@@ -125,9 +123,9 @@ Account? accountAuthorized;
 // Account accountAuthorized = new Account(
 //   "10",
 //   "15cf16a7-e680-468b-92e3-9f476e9e7f93",
-//   "Oei Angela Christabel Gunawan",
+//   "Samuel Santoso",
 //   "+62824276238",
-//   "natasya.handjaya@binus.ac.id",
+//   "samuel.santoso@binus.ac.id",
 //   "password",
 //   "100",
 //   [],

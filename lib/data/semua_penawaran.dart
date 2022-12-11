@@ -1,5 +1,4 @@
 import 'package:caridiskon/data/review.dart';
-import 'package:flutter/cupertino.dart';
 
 class SemuaPenawaran {
   final String id;
