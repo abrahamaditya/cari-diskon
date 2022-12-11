@@ -48,7 +48,7 @@ class FooterWidget extends StatelessWidget {
               height: Sizes.dp12(context),
               width: Sizes.dp40(context),
               child: Image.asset(
-                "./logo/caridiskon.png",
+                "assets/logo/caridiskon.png",
               ),
             ),
           ),

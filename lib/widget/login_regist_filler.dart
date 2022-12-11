@@ -19,7 +19,7 @@ class loginRegistFiller extends StatelessWidget {
             child: Row(
               children: [
                 Image.asset(
-                  './icons/icon_check.png',
+                  'assets/icons/icon_check.png',
                   width: Sizes.dp10(context),
                 ),
                 SizedBox(width: Sizes.dp3(context)),
@@ -54,7 +54,7 @@ class loginRegistFiller extends StatelessWidget {
             child: Row(
               children: [
                 Image.asset(
-                  './icons/icon_thumbs.png',
+                  'assets/icons/icon_thumbs.png',
                   width: Sizes.dp10(context),
                 ),
                 SizedBox(width: Sizes.dp3(context)),
@@ -92,7 +92,7 @@ class loginRegistFiller extends StatelessWidget {
             child: Row(
               children: [
                 Image.asset(
-                  './icons/icon_star.png',
+                  'assets/icons/icon_star.png',
                   width: Sizes.dp10(context),
                 ),
                 SizedBox(width: Sizes.dp3(context)),

@@ -31,7 +31,7 @@ Widget cardV5(BuildContext context, String path) {
                 width: Sizes.dp40(context),
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("./image/image2.jpg"),
+                    image: AssetImage("assets/image/image2.jpg"),
                     fit: BoxFit.fill,
                   ),
                 ),

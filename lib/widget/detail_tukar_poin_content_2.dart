@@ -219,7 +219,7 @@ Widget detailTukarPoinContent2(BuildContext context, TukarPoin data) {
                                     ),
                                   ),
                                   lottieBuilder: Lottie.asset(
-                                    './animation/Insufficient-funds.json',
+                                    'assets/animation/Insufficient-funds.json',
                                     frameRate: FrameRate(60),
                                     fit: BoxFit.contain,
                                   ),
@@ -326,7 +326,7 @@ Widget detailTukarPoinContent2(BuildContext context, TukarPoin data) {
                                             ),
                                           ),
                                           lottieBuilder: Lottie.asset(
-                                            './animation/alert.json',
+                                            'assets/animation/alert.json',
                                             frameRate: FrameRate(60),
                                             fit: BoxFit.contain,
                                             // height: Sizes.dp1(context),
@@ -352,7 +352,7 @@ Widget detailTukarPoinContent2(BuildContext context, TukarPoin data) {
                                             ),
                                           ),
                                           lottieBuilder: Lottie.asset(
-                                            './animation/successful-tick.json',
+                                            'assets/animation/successful-tick.json',
                                             frameRate: FrameRate(60),
                                             fit: BoxFit.contain,
                                             // height: Sizes.dp1(context),

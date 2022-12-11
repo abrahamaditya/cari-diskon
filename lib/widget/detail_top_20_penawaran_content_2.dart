@@ -308,7 +308,7 @@ Widget detailTop20PenawaranContent2(BuildContext context, Top20Penawaran data) {
                                             ),
                                           ),
                                           lottieBuilder: Lottie.asset(
-                                            './animation/alert.json',
+                                            'assets/animation/alert.json',
                                             frameRate: FrameRate(60),
                                             fit: BoxFit.contain,
                                             // height: Sizes.dp1(context),

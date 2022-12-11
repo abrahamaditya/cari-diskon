@@ -23,7 +23,7 @@ Widget homeContent1(BuildContext context) {
           child: Row(
             children: [
               Flexible(
-                child: Image.asset("./illustration/shopping_cart.png"),
+                child: Image.asset("assets/illustration/shopping_cart.png"),
               ),
             ],
           ),
@@ -55,19 +55,19 @@ Widget homeContent1(BuildContext context) {
             SizedBox(height: Sizes.dp4(context)),
             Row(
               children: [
-                card(context, "./logo/full/gojek.png", "4"),
+                card(context, "assets/logo/full/gojek.png", "4"),
                 SizedBox(width: Sizes.dp4(context)),
-                card(context, "./logo/full/grab.png", "5"),
+                card(context, "assets/logo/full/grab.png", "5"),
                 SizedBox(width: Sizes.dp4(context)),
-                card(context, "./logo/full/traveloka.png", "16"),
+                card(context, "assets/logo/full/traveloka.png", "16"),
               ],
             ),
             SizedBox(height: Sizes.dp4(context)),
             Row(
               children: [
-                card(context, "./logo/full/airasiafood.png", "0"),
+                card(context, "assets/logo/full/airasiafood.png", "0"),
                 SizedBox(width: Sizes.dp4(context)),
-                card(context, "./logo/full/shopeefood.png", "13"),
+                card(context, "assets/logo/full/shopeefood.png", "13"),
                 SizedBox(width: Sizes.dp4(context)),
                 SizedBox(
                   width: Sizes.dp48(context),
@@ -126,7 +126,7 @@ Widget homeContent1(BuildContext context) {
           child: Row(
             children: [
               Flexible(
-                child: Image.asset("./illustration/woman_with_bag_2.png"),
+                child: Image.asset("assets/illustration/woman_with_bag_2.png"),
               ),
             ],
           ),

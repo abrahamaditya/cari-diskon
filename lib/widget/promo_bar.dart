@@ -94,7 +94,7 @@ Widget promoBar(BuildContext context) {
                           ),
                         ),
                         lottieBuilder: Lottie.asset(
-                          './animation/alert.json',
+                          'assets/animation/alert.json',
                           frameRate: FrameRate(60),
                           fit: BoxFit.contain,
                         ),

@@ -45,7 +45,7 @@ Widget homeContent4(BuildContext context) {
             SizedBox(height: Sizes.dp4(context)),
             Row(
               children: [
-                //cardV4(context, "./logo/gojek.png"),
+                //cardV4(context, "assets/logo/gojek.png"),
                 Container(
                   padding: EdgeInsets.all(Sizes.dp2(context)),
                   height: Sizes.dp48(context) + Sizes.dp16(context),
@@ -53,7 +53,7 @@ Widget homeContent4(BuildContext context) {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(Sizes.dp2(context)),
                     image: DecorationImage(
-                      image: AssetImage("./image/image.png"),
+                      image: AssetImage("assets/image/image.png"),
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -103,17 +103,17 @@ Widget homeContent4(BuildContext context) {
                   children: [
                     Row(
                       children: [
-                        cardV4(context, "./logo/full/mcd.png", "8"),
+                        cardV4(context, "assets/logo/full/mcd.png", "8"),
                         SizedBox(width: Sizes.dp6(context)),
-                        cardV4(context, "./logo/full/kfc.png", "7"),
+                        cardV4(context, "assets/logo/full/kfc.png", "7"),
                       ],
                     ),
                     SizedBox(height: Sizes.dp5(context)),
                     Row(
                       children: [
-                        cardV4(context, "./logo/full/starbucks.png", "14"),
+                        cardV4(context, "assets/logo/full/starbucks.png", "14"),
                         SizedBox(width: Sizes.dp6(context)),
-                        cardV4(context, "./logo/full/pizzahut.png", "10"),
+                        cardV4(context, "assets/logo/full/pizzahut.png", "10"),
                       ],
                     ),
                   ],
