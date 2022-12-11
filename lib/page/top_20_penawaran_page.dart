@@ -1,4 +1,3 @@
-import 'package:caridiskon/BLoC/login_BLoC.dart';
 import 'package:caridiskon/BLoC/top_20_penawaran_BLoC.dart';
 import 'package:caridiskon/helper/color.dart';
 import 'package:caridiskon/helper/sizes.dart';

@@ -10,7 +10,6 @@ import 'package:caridiskon/widget/detail_semua_penawaran_content_3.dart';
 import 'package:caridiskon/widget/detail_semua_penawaran_content_4.dart';
 import 'package:caridiskon/widget/footer.dart';
 import 'package:caridiskon/widget/promo_bar.dart';
-import 'package:caridiskon/widget/text_comment_field_comment.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:footer/footer.dart';

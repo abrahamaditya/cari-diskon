@@ -1,4 +1,3 @@
-import 'package:caridiskon/BLoC/rating_BLoC.dart';
 import 'package:caridiskon/BLoC/semua_penawaran_BLoC.dart';
 import 'package:caridiskon/helper/color.dart';
 import 'package:caridiskon/helper/sizes.dart';

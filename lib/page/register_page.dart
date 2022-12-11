@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:caridiskon/BLoC/login_BLoC.dart';
 import 'package:caridiskon/data/account.dart';
 import 'package:caridiskon/helper/color.dart';
@@ -13,7 +11,6 @@ import 'package:caridiskon/widget/text_email_insert_field.dart';
 import 'package:caridiskon/widget/text_name_field.dart';
 import 'package:caridiskon/widget/text_password_insert_field.dart';
 import 'package:caridiskon/widget/text_phone_field.dart';
-import 'package:clipboard/clipboard.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -386,7 +383,7 @@ class RegisterPage extends StatelessWidget {
                                 print("password: " + password!);
                                 if (nama == "null" ||
                                     email == "null" ||
-                                    email == "Email kurang tepat" ||
+                                    email!.contains("@") == false ||
                                     phone == "null" ||
                                     password == "null") {
                                   print("Register Failed");

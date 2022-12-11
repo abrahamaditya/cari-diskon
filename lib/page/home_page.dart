@@ -1,6 +1,4 @@
-import 'package:caridiskon/BLoC/login_BLoC.dart';
 import 'package:caridiskon/BLoC/rating_BLoC.dart';
-import 'package:caridiskon/data/account.dart';
 import 'package:caridiskon/helper/sizes.dart';
 import 'package:caridiskon/widget/app_navigation_bar.dart';
 import 'package:caridiskon/widget/footer.dart';
