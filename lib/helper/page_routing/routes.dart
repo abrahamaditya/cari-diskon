@@ -104,10 +104,5 @@ class Routes {
         handler: contactUsHandler,
         transitionType: TransitionType.inFromLeft,
         transitionDuration: const Duration(milliseconds: 100));
-
-    router.define(login,
-        handler: loginHandler,
-        transitionType: TransitionType.inFromLeft,
-        transitionDuration: const Duration(milliseconds: 100));
   }
 }
