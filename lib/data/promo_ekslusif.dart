@@ -1,5 +1,6 @@
 class PromoEkslusif {
   final String id;
+  final String GUID;
   final String name;
   final String subname;
   final String description1;
@@ -12,6 +13,7 @@ class PromoEkslusif {
   final String totalRating;
   PromoEkslusif(
     this.id,
+    this.GUID,
     this.name,
     this.subname,
     this.description1,
@@ -29,6 +31,7 @@ List<PromoEkslusif> promosEkslusif = promoEkslusifData
     .map(
       (item) => PromoEkslusif(
         item['id'].toString(),
+        item['GUID'].toString(),
         item['name'].toString(),
         item['subname'].toString(),
         item['description1'].toString(),
@@ -45,7 +48,8 @@ List<PromoEkslusif> promosEkslusif = promoEkslusifData
 
 var promoEkslusifData = [
   {
-    'id': '1',
+    'id': '21',
+    'GUID': '195098d8-e331-4a2d-9502-b5d5d9d93a47',
     'name': 'Diskon Ongkir 80%',
     'subname': 'Berlaku untuk semua makanan',
     'description1': '• 20/04/2022 00:00 – 27/04/2022 00:00',
@@ -58,7 +62,8 @@ var promoEkslusifData = [
     'totalRating': '178',
   },
   {
-    'id': '2',
+    'id': '22',
+    'GUID': '6163fa0d-4463-47d4-8eb6-c4f07ca8fe2b',
     'name': 'Potongan 90%',
     'subname': 'Berlaku untuk semua produk',
     'description1': '• 20/04/2022 00:00 – 27/04/2022 00:00',
@@ -71,7 +76,8 @@ var promoEkslusifData = [
     'totalRating': '244',
   },
   {
-    'id': '3',
+    'id': '23',
+    'GUID': '61754dba-f10e-4a99-ae58-5e878d1c1272',
     'name': 'Cashback 99%',
     'subname': 'Berlaku untuk semua produk',
     'description1': '• 20/04/2022 00:00 – 27/04/2022 00:00',

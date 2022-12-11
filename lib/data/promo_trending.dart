@@ -1,5 +1,6 @@
 class PromoTrending {
   final String id;
+  final String GUID;
   final String name;
   final String subname;
   final String description1;
@@ -11,6 +12,7 @@ class PromoTrending {
   final String totalRating;
   PromoTrending(
     this.id,
+    this.GUID,
     this.name,
     this.subname,
     this.description1,
@@ -27,6 +29,7 @@ List<PromoTrending> promosTrending = promoTrendingData
     .map(
       (item) => PromoTrending(
         item['id'].toString(),
+        item['GUID'].toString(),
         item['name'].toString(),
         item['subname'].toString(),
         item['description1'].toString(),
@@ -42,7 +45,8 @@ List<PromoTrending> promosTrending = promoTrendingData
 
 var promoTrendingData = [
   {
-    'id': '1',
+    'id': '24',
+    'GUID': '5dfaefe2-f589-47f0-9097-b1b99f0c51a2',
     'name': 'Cashback 50%',
     'subname': 'Pembayaran melalui Paylater',
     'description1': '20/04/2022 00:00 – 27/04/2022 00:00',
@@ -54,7 +58,8 @@ var promoTrendingData = [
     'totalRating': '195',
   },
   {
-    'id': '2',
+    'id': '25',
+    'GUID': '21372d05-6223-4218-9d87-b9473d587df4',
     'name': 'Diskon 20% Elektronik',
     'subname': 'Berlaku untuk semua produk',
     'description1': '20/04/2022 00:00 – 27/04/2022 00:00',
@@ -66,7 +71,8 @@ var promoTrendingData = [
     'totalRating': '171',
   },
   {
-    'id': '3',
+    'id': '26',
+    'GUID': '0606ace5-56bd-4265-9f2a-f0c1cc4bd4cd',
     'name': 'Promo McDelivery 10%',
     'subname': 'Pembayaran melalui GoPay',
     'description1': '20/04/2022 00:00 – 27/04/2022 00:00',

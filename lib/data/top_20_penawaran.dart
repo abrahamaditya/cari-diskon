@@ -2,6 +2,7 @@ import 'package:caridiskon/data/review.dart';
 
 class Top20Penawaran {
   final String id;
+  final String GUID;
   final String name;
   final String description1;
   final String description2;
@@ -13,6 +14,7 @@ class Top20Penawaran {
   final String image;
   final String deadline;
   final String type;
+  final String reward;
   final String code;
   final String website;
   final String category;
@@ -21,6 +23,7 @@ class Top20Penawaran {
   final List<Review> review;
   Top20Penawaran(
     this.id,
+    this.GUID,
     this.name,
     this.description1,
     this.description2,
@@ -32,6 +35,7 @@ class Top20Penawaran {
     this.image,
     this.deadline,
     this.type,
+    this.reward,
     this.code,
     this.website,
     this.category,
@@ -44,6 +48,7 @@ class Top20Penawaran {
 List<Top20Penawaran> top20penawaran = Top20PenawaranData.map(
   (item) => Top20Penawaran(
     item['id'].toString(),
+    item['GUID'].toString(),
     item['name'].toString(),
     item['description1'].toString(),
     item['description2'].toString(),
@@ -55,6 +60,7 @@ List<Top20Penawaran> top20penawaran = Top20PenawaranData.map(
     item['image'].toString(),
     item['deadline'].toString(),
     item['type'].toString(),
+    item['reward'].toString(),
     item['code'].toString(),
     item['website'].toString(),
     item['category'].toString(),
@@ -67,6 +73,7 @@ List<Top20Penawaran> top20penawaran = Top20PenawaranData.map(
 var Top20PenawaranData = [
   {
     'id': '0',
+    'GUID': '71384185-6108-4778-a5ab-77011b214f76',
     'name': 'Diskon GrabFood untuk semua makanan',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -79,6 +86,7 @@ var Top20PenawaranData = [
     'image': './image/brand/grabfood.png',
     'deadline': '3 HARI LAGI',
     'type': 'Diskon',
+    'reward': 'null',
     'code': 'null',
     'website': 'https://food.grab.com/id/id/',
     'category': 'Makanan & Minuman',
@@ -87,6 +95,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '0',
+        'GUID': 'd1f57a4d-cdb7-4527-8570-b61f002fa6be',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -94,32 +103,38 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '1',
+        'GUID': 'bf51bcec-247c-44aa-98e2-e01c99e55f45',
         'name': 'Yuda',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '3 hari yang lalu',
         'comment': 'Mantap, bang.',
         'rating': '4.0',
         'likes': '92',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '1',
+    'GUID': 'a0789dc3-774b-4121-8dbb-b7cbf0c9b997',
     'name': 'Cashback Bukalapak untuk produk elektronik',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -132,6 +147,7 @@ var Top20PenawaranData = [
     'image': './image/brand/bukalapak.png',
     'deadline': '5 HARI LAGI',
     'type': 'Kode',
+    'reward': '5',
     'code': 'ABC123',
     'website': 'null',
     'category': 'Elektronik',
@@ -140,6 +156,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '2',
+        'GUID': '01505566-5357-40b6-982e-3f9d61292e02',
         'name': 'Anon',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '8 jam yang lalu',
@@ -147,32 +164,38 @@ var Top20PenawaranData = [
             'Penyelamat kantong wkwkwk lumayan lah 75 rebu. Thank you, CariDiskon.',
         'rating': '5.0',
         'likes': '72',
+        'likeButton': false,
       },
       {
         'id': '3',
+        'GUID': 'ce1a0760-070f-4a00-b382-68b98f98f42c',
         'name': 'Arif',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '6 hari yang lalu',
         'comment': 'Kodenya work, sih. Cuma kurang banyak aja.',
         'rating': '3.0',
         'likes': '42',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '2',
+    'GUID': '48e5275b-0884-44da-a231-affbd0c02a3b',
     'name': 'Promo KFC paket combo',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -185,6 +208,7 @@ var Top20PenawaranData = [
     'image': './image/brand/kfc.png',
     'deadline': '4 HARI LAGI',
     'type': 'Kode',
+    'reward': '5',
     'code': 'ABC123',
     'website': 'null',
     'category': 'Makanan & Minuman',
@@ -193,6 +217,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '1',
+        'GUID': '345239a0-630c-4977-bbb8-9dabe27a34a8',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -200,9 +225,11 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '2',
+        'GUID': '30fdca20-2757-4711-989d-344308ce9003',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -210,23 +237,27 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '3',
+    'GUID': 'ab329cda-da44-461b-bc5f-7a035f7dc303',
     'name': 'Potongan ongkir di GoFood',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -239,6 +270,7 @@ var Top20PenawaranData = [
     'image': './image/brand/gofood.png',
     'deadline': '2 HARI LAGI',
     'type': 'Kode',
+    'reward': '10',
     'code': 'ABC123',
     'website': 'null',
     'category': 'Makanan & Minuman',
@@ -247,6 +279,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '1',
+        'GUID': '13fcfeb0-ea57-447e-981f-9166959678c7',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -254,9 +287,11 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '2',
+        'GUID': 'c785d214-f917-4478-bd14-a696c6e3b999',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -264,23 +299,27 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '4',
+    'GUID': 'd450a46a-2c6a-49bb-ac59-e88e23c65b94',
     'name': 'Diskon semua pizza hanya di Pizza Hut area Jabodetabek',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -293,6 +332,7 @@ var Top20PenawaranData = [
     'image': './image/brand/pizzahut.png',
     'deadline': '2 HARI LAGI',
     'type': 'Diskon',
+    'reward': 'null',
     'code': 'null',
     'website': 'https://www.pizzahut.co.id/',
     'category': 'Makanan & Minuman',
@@ -301,6 +341,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '1',
+        'GUID': 'fb03632d-1839-4077-b687-375027500b81',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -308,9 +349,11 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '2',
+        'GUID': 'b2f21c67-cb77-4711-90de-77ef2f703f7d',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -318,23 +361,27 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '5',
+    'GUID': '7d2150fc-f259-4da6-9190-22a8f1a005f8',
     'name': 'Gratis ongkir sepuasnya',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -347,6 +394,7 @@ var Top20PenawaranData = [
     'image': './image/brand/pizzahutdelivery.png',
     'deadline': '1 HARI LAGI',
     'type': 'Kode',
+    'reward': '15',
     'code': 'ABC123',
     'website': 'null',
     'category': 'Makanan & Minuman',
@@ -355,6 +403,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '1',
+        'GUID': '60597939-dcea-419b-a3db-0efe068e7fb6',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -362,9 +411,11 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '2',
+        'GUID': '4fd22b76-b798-4aec-9281-47a976f1416c',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -372,23 +423,27 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '6',
+    'GUID': '9bcd3963-8efd-470e-8e79-a5cc8b7d3fe9',
     'name': 'Diskon booking tiket pesawat di Traveloka',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -401,6 +456,7 @@ var Top20PenawaranData = [
     'image': './image/brand/traveloka.png',
     'deadline': '6 HARI LAGI',
     'type': 'Diskon',
+    'reward': 'null',
     'code': 'null',
     'website': 'https://www.traveloka.com/',
     'category': 'Transportasi',
@@ -409,6 +465,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '1',
+        'GUID': 'f70276b2-81e7-4139-bcc0-6023aa358068',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -416,9 +473,11 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '2',
+        'GUID': 'e3471389-98c4-4dd8-b501-7bc7859b2bf1',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -426,23 +485,27 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '7',
+    'GUID': '2734dd59-64f8-4249-8fc2-bf4f5cc242a6',
     'name': 'Hemat 60% menu PaNas 2 di McDonald\'s',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -455,6 +518,7 @@ var Top20PenawaranData = [
     'image': './image/brand/mcdonalds.png',
     'deadline': '3 HARI LAGI',
     'type': 'Diskon',
+    'reward': 'null',
     'code': 'null',
     'website': 'https://mcdonalds.co.id/',
     'category': 'Makanan & Minuman',
@@ -463,6 +527,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '1',
+        'GUID': '74999f8b-b572-40fa-86f3-89437b386605',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -470,9 +535,11 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '2',
+        'GUID': 'c0dd69d4-7b43-480e-99a5-cab224da6b59',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -480,23 +547,27 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '8',
+    'GUID': '38083e8a-08df-4c68-a908-92e5f036bd32',
     'name': 'Diskon ongkir Gojek',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -509,6 +580,7 @@ var Top20PenawaranData = [
     'image': './image/brand/gojek.png',
     'deadline': '6 HARI LAGI',
     'type': 'Diskon',
+    'reward': 'null',
     'code': 'null',
     'website': 'https://www.gojek.com/',
     'category': 'Transportasi',
@@ -517,6 +589,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '1',
+        'GUID': '9bc10d76-7002-49c3-ad5f-e57cf7c054b4',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -524,9 +597,11 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '2',
+        'GUID': '1434396c-6336-46c1-bb08-c8caed91a845',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -534,23 +609,27 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '9',
+    'GUID': 'abdeb7dc-7746-45d1-abc3-5cf7a1d599ac',
     'name': 'Gratis ongkir di ShopeeFood',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -563,6 +642,7 @@ var Top20PenawaranData = [
     'image': './image/brand/shopeefood.png',
     'deadline': '2 HARI LAGI',
     'type': 'Kode',
+    'reward': '10',
     'code': 'ABC123',
     'website': 'null',
     'category': 'Makanan & Minuman',
@@ -571,6 +651,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '1',
+        'GUID': '5acd8750-832e-4e7d-bf29-ef59d16f37b3',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -578,9 +659,11 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '2',
+        'GUID': '8e10a6b8-ca85-4331-8916-59ac937d93ce',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -588,23 +671,27 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '10',
+    'GUID': 'f114c552-7234-4568-87ed-d75073c762cc',
     'name': 'Cashback 10% hanya di Richeese Factory',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -617,6 +704,7 @@ var Top20PenawaranData = [
     'image': './image/brand/richeesefactory.png',
     'deadline': '8 HARI LAGI',
     'type': 'Diskon',
+    'reward': 'null',
     'code': 'null',
     'website': 'https://www.richeesefactory.com/id',
     'category': 'Makanan & Minuman',
@@ -625,6 +713,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '1',
+        'GUID': 'ba6e549e-7f6b-46e1-baec-376d9d366b5a',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -632,9 +721,11 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '2',
+        'GUID': 'a1a1406b-234e-442d-9ba5-44befb51de9d',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -642,23 +733,27 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '11',
+    'GUID': '959de8e4-c2d7-4e7b-b0cf-231f5a1a61e5',
     'name': 'Nikmati potongan isi ulang pulsa di Tokopedia',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -671,6 +766,7 @@ var Top20PenawaranData = [
     'image': './image/brand/tokopedia.png',
     'deadline': '1 HARI LAGI',
     'type': 'Kode',
+    'reward': '5',
     'code': 'ABC123',
     'website': 'null',
     'category': 'Lainnya',
@@ -679,6 +775,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '1',
+        'GUID': 'e32ad41e-2f04-4459-991e-8e5ac70c7137',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -686,9 +783,11 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '2',
+        'GUID': '983d90b7-3d94-4073-b673-7951f527cdb0',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -696,23 +795,27 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '12',
+    'GUID': '925d1709-5412-45e6-8fa9-31a0a74e0a17',
     'name': 'Gratis seluruh pembelian melalui AirAsia Food',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -725,6 +828,7 @@ var Top20PenawaranData = [
     'image': './image/brand/airasiafood.png',
     'deadline': '1 HARI LAGI',
     'type': 'Kode',
+    'reward': '5',
     'code': 'ABC123',
     'website': 'null',
     'category': 'Makanan & Minuman',
@@ -733,6 +837,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '1',
+        'GUID': 'cc663576-3a47-45e1-afb7-2b69d782f2d5',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -740,9 +845,11 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '2',
+        'GUID': 'dec325f5-b199-462f-8aec-10be2c3e0bf7',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -750,23 +857,27 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '13',
+    'GUID': 'fc6af9c2-ff13-498f-bc64-218ee4992108',
     'name': 'Potongan 50% naik GrabCar',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -779,6 +890,7 @@ var Top20PenawaranData = [
     'image': './image/brand/grab.png',
     'deadline': '3 HARI LAGI',
     'type': 'Diskon',
+    'reward': 'null',
     'code': 'null',
     'website': 'https://grab.com/id/',
     'category': 'Transportasi',
@@ -787,6 +899,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '1',
+        'GUID': 'a8761d49-76b7-44ab-8084-24be59b0aac5',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -794,9 +907,11 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '2',
+        'GUID': '6974a847-6881-4760-b2f2-fa1f0bacf3b6',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -804,23 +919,27 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '14',
+    'GUID': '58c864b5-d228-44ce-8a91-7c41e8abfaef',
     'name': 'Potongan hingga 30k di Traveloka Eats',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -833,6 +952,7 @@ var Top20PenawaranData = [
     'image': './image/brand/travelokaeats.png',
     'deadline': '3 HARI LAGI',
     'type': 'Diskon',
+    'reward': 'null',
     'code': 'null',
     'website': 'https://www.traveloka.com/id-id/restaurants',
     'category': 'Makanan & Minuman',
@@ -841,6 +961,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '1',
+        'GUID': '1ee0811e-0a94-45fe-b707-5d6234c6f87e',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -848,9 +969,11 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '2',
+        'GUID': '69f4d634-5d6c-4830-a0fc-05a6f75ad52e',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -858,23 +981,27 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '15',
+    'GUID': 'b8d5dd9a-dc55-4eca-8a03-fd7f9d3e24ff',
     'name': 'Diskon sepatu olahraga hanya di Shopee',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -887,6 +1014,7 @@ var Top20PenawaranData = [
     'image': './image/brand/shopee.png',
     'deadline': '3 HARI LAGI',
     'type': 'Diskon',
+    'reward': 'null',
     'code': 'null',
     'website': 'https://shopee.co.id/',
     'category': 'Olahraga',
@@ -895,6 +1023,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '1',
+        'GUID': '88b74bfb-32ce-46ce-8acd-c2654eeb2677',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -902,9 +1031,11 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '2',
+        'GUID': 'df119bc9-ed88-4ccb-a5bb-801aaef27e39',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -912,23 +1043,27 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '16',
+    'GUID': '0c5251dd-0ff6-4b2b-9503-8837594b3d7e',
     'name': 'Diskon produk kecantikan di Tokopedia',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -941,6 +1076,7 @@ var Top20PenawaranData = [
     'image': './image/brand/tokopedia.png',
     'deadline': '7 HARI LAGI',
     'type': 'Diskon',
+    'reward': 'null',
     'code': 'null',
     'website': 'https://www.tokopedia.com/',
     'category': 'Perawatan Tubuh',
@@ -949,6 +1085,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '1',
+        'GUID': '1c1e39c5-b711-4f39-9650-3767a1c3f3a7',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -956,9 +1093,11 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '2',
+        'GUID': '57f811e9-c85b-42ee-9a19-d2c7b3879c1f',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -966,23 +1105,27 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '17',
+    'GUID': '96703f6a-8ab0-4afc-8fef-aaee7ffe9af1',
     'name': 'Promo member di Starbucks',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -995,6 +1138,7 @@ var Top20PenawaranData = [
     'image': './image/brand/starbucks.png',
     'deadline': '1 HARI LAGI',
     'type': 'Kode',
+    'reward': '25',
     'code': 'ABC123',
     'website': 'null',
     'category': 'Makanan & Minuman',
@@ -1003,6 +1147,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '1',
+        'GUID': 'edb2d313-1656-4f43-8c5c-fe5bc8043904',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -1010,9 +1155,11 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '2',
+        'GUID': '0415621b-d9ae-4d8c-bd0e-07c7694282a4',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -1020,23 +1167,27 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '18',
+    'GUID': 'cdbff41f-cfb0-497a-aade-c26476b67fd1',
     'name': 'Diskon fashion muslim hanya di Shopee',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -1049,6 +1200,7 @@ var Top20PenawaranData = [
     'image': './image/brand/shopee.png',
     'deadline': '3 HARI LAGI',
     'type': 'Diskon',
+    'reward': 'null',
     'code': 'null',
     'website': 'https://shopee.co.id/',
     'category': 'Fashion',
@@ -1057,6 +1209,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '1',
+        'GUID': 'e9980fd7-7d62-4242-b489-e037e057f88d',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -1064,9 +1217,11 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '2',
+        'GUID': '9e0f1256-6251-4098-8884-03d70ebbb1e2',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -1074,23 +1229,27 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '19',
+    'GUID': 'a8bbcd81-c4fd-4f71-9cf3-ec9859d54510',
     'name': 'Diskon untuk semua pizza di Domino\'s Pizza',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -1103,6 +1262,7 @@ var Top20PenawaranData = [
     'image': './image/brand/dominospizza.png',
     'deadline': '2 HARI LAGI',
     'type': 'Diskon',
+    'reward': 'null',
     'code': 'null',
     'website': 'https://www.dominos.co.id/',
     'category': 'Makanan & Minuman',
@@ -1111,6 +1271,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '1',
+        'GUID': 'ae1a3ff4-02f1-4af5-9a67-e8e90572d126',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -1118,9 +1279,11 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '2',
+        'GUID': 'd644c0c2-16c7-4d5e-8029-51aca562de66',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -1128,23 +1291,27 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),
   },
   {
     'id': '20',
+    'GUID': '6b82e427-bf8f-4e7d-9a8e-834d037e6dbb',
     'name': 'Diskon masker medis di Tokopedia',
     'description1':
         'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
@@ -1157,6 +1324,7 @@ var Top20PenawaranData = [
     'image': './image/brand/tokopedia.png',
     'deadline': '3 HARI LAGI',
     'type': 'Diskon',
+    'reward': 'null',
     'code': 'null',
     'website': 'https://www.tokopedia.com/',
     'category': 'Kesehatan',
@@ -1165,6 +1333,7 @@ var Top20PenawaranData = [
     'review': [
       {
         'id': '1',
+        'GUID': 'a11d7682-ed26-4c5b-a769-89fe09991a2c',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -1172,9 +1341,11 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
       {
         'id': '2',
+        'GUID': '4ad91bfa-34f2-4051-9132-74d025ac627a',
         'name': 'Lica',
         'profilePicture': './image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
@@ -1182,17 +1353,20 @@ var Top20PenawaranData = [
             'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
         'rating': '5.0',
         'likes': '101',
+        'likeButton': false,
       },
     ]
         .map(
           (item) => Review(
             item['id'].toString(),
+            item['GUID'].toString(),
             item['name'].toString(),
             item['profilePicture'].toString(),
             item['date'].toString(),
             item['comment'].toString(),
             item['rating'].toString(),
             item['likes'].toString(),
+            item['likeButton'] as bool,
           ),
         )
         .toList(),

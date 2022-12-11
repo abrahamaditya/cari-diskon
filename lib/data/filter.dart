@@ -12,6 +12,7 @@ var kategoriFilterData = [
 ];
 
 var tokoFilterData = [
+  "AirAsia Food",
   "Bukalapak",
   "Domino\'s Pizza",
   "GoFood",
@@ -31,5 +32,3 @@ var tokoFilterData = [
 ];
 
 List resultFilterData = ["null", "null", "null"];
-
-List breadCrumb = [];
