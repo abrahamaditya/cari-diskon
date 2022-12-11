@@ -1,3 +1,6 @@
+import 'package:caridiskon/BLoC/login_BLoC.dart';
+import 'package:caridiskon/BLoC/rating_BLoC.dart';
+import 'package:caridiskon/data/account.dart';
 import 'package:caridiskon/helper/sizes.dart';
 import 'package:caridiskon/widget/app_navigation_bar.dart';
 import 'package:caridiskon/widget/footer.dart';
@@ -7,6 +10,7 @@ import 'package:caridiskon/widget/home_content_3.dart';
 import 'package:caridiskon/widget/home_content_4.dart';
 import 'package:caridiskon/widget/promo_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:footer/footer.dart';
 import 'package:footer/footer_view.dart';
@@ -17,8 +21,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: const Size(1920, 1080),
-      builder: (BuildContext context, Widget? child) {
-        return Scaffold(
+      builder: (BuildContext context, Widget? child) => MultiBlocProvider(
+        providers: [
+          BlocProvider(create: (_) => SendButton()),
+          BlocProvider(create: (_) => InitialSaved()),
+          BlocProvider(create: (_) => CommentSaved()),
+        ],
+        child: Scaffold(
           resizeToAvoidBottomInset: false,
           body: FooterView(
             flex: 10,
@@ -28,8 +37,8 @@ class HomePage extends StatelessWidget {
             ),
             children: [homePageView(context)],
           ),
-        );
-      },
+        ),
+      ),
     );
   }
 

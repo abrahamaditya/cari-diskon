@@ -1,5 +1,4 @@
 import 'package:caridiskon/helper/color.dart';
-import 'package:caridiskon/widget/search_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:caridiskon/helper/sizes.dart';
 import 'package:google_fonts/google_fonts.dart';

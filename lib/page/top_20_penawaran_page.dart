@@ -1,5 +1,5 @@
-import 'package:caridiskon/BLoC/top_20_penawaran_page/detail_penawaran_page_BLoC.dart';
-import 'package:caridiskon/BLoC/top_20_penawaran_page/top_20_penawaran_BLoC.dart';
+import 'package:caridiskon/BLoC/login_BLoC.dart';
+import 'package:caridiskon/BLoC/top_20_penawaran_BLoC.dart';
 import 'package:caridiskon/helper/color.dart';
 import 'package:caridiskon/helper/sizes.dart';
 import 'package:caridiskon/widget/app_navigation_bar.dart';
@@ -23,17 +23,17 @@ class Top20PenawaranPage extends StatelessWidget {
       designSize: const Size(1920, 1080),
       builder: (BuildContext context, Widget? child) => MultiBlocProvider(
         providers: [
-          BlocProvider(create: (_) => FilterName()),
-          BlocProvider(create: (_) => FilterResult()),
-          BlocProvider(create: (_) => DetailPenawaran()),
-          BlocProvider(create: (_) => FilterResultLength()),
-          BlocProvider(create: (_) => FilterButton()),
-          BlocProvider(create: (_) => FilterAble()),
-          BlocProvider(create: (_) => FilterMasaBerlaku()),
-          BlocProvider(create: (_) => FilterPenilaian()),
-          BlocProvider(create: (_) => FilterTipe()),
-          BlocProvider(create: (_) => FilterKategori()),
-          BlocProvider(create: (_) => FilterToko()),
+          BlocProvider(create: (_) => FilterTop20Name()),
+          BlocProvider(create: (_) => FilterTop20Result()),
+          BlocProvider(create: (_) => DetailTop20Penawaran()),
+          BlocProvider(create: (_) => FilterTop20ResultLength()),
+          BlocProvider(create: (_) => FilterTop20Button()),
+          BlocProvider(create: (_) => FilterTop20Able()),
+          BlocProvider(create: (_) => FilterTop20MasaBerlaku()),
+          BlocProvider(create: (_) => FilterTop20Penilaian()),
+          BlocProvider(create: (_) => FilterTop20Tipe()),
+          BlocProvider(create: (_) => FilterTop20Kategori()),
+          BlocProvider(create: (_) => FilterTop20Toko()),
         ],
         child: Scaffold(
           resizeToAvoidBottomInset: false,

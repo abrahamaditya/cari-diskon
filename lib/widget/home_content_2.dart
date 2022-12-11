@@ -1,5 +1,6 @@
 import 'package:caridiskon/data/promo_trending.dart';
 import 'package:caridiskon/helper/color.dart';
+import 'package:caridiskon/helper/page_routing/application.dart';
 import 'package:caridiskon/widget/card_v2.dart';
 import 'package:flutter/material.dart';
 import 'package:caridiskon/helper/sizes.dart';
@@ -12,6 +13,7 @@ Widget homeContent2(BuildContext context) {
     height: Sizes.dp40(context) + Sizes.dp10(context),
     //width: Sizes.dp40(context) + Sizes.dp4(context),
     //width: Sizes.dp94(context),
+
     child: Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [

@@ -1,9 +1,5 @@
 import 'package:caridiskon/helper/color.dart';
-import 'package:caridiskon/widget/card.dart';
-import 'package:caridiskon/widget/card_v3.dart';
 import 'package:caridiskon/widget/card_v4.dart';
-import 'package:caridiskon/widget/card_v5.dart';
-import 'package:caridiskon/widget/search_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:caridiskon/helper/sizes.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -107,17 +103,17 @@ Widget homeContent4(BuildContext context) {
                   children: [
                     Row(
                       children: [
-                        cardV4(context, "./logo/full/mcd.png"),
+                        cardV4(context, "./logo/full/mcd.png", "8"),
                         SizedBox(width: Sizes.dp6(context)),
-                        cardV4(context, "./logo/full/kfc.png"),
+                        cardV4(context, "./logo/full/kfc.png", "7"),
                       ],
                     ),
                     SizedBox(height: Sizes.dp5(context)),
                     Row(
                       children: [
-                        cardV4(context, "./logo/full/starbucks.png"),
+                        cardV4(context, "./logo/full/starbucks.png", "14"),
                         SizedBox(width: Sizes.dp6(context)),
-                        cardV4(context, "./logo/full/pizzahut.png"),
+                        cardV4(context, "./logo/full/pizzahut.png", "10"),
                       ],
                     ),
                   ],

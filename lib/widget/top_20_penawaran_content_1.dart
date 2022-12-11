@@ -1,7 +1,7 @@
-import 'package:caridiskon/BLoC/top_20_penawaran_page/top_20_penawaran_BLoC.dart';
+import 'package:caridiskon/BLoC/top_20_penawaran_BLoC.dart';
 import 'package:caridiskon/helper/color.dart';
 import 'package:caridiskon/helper/page_routing/application.dart';
-import 'package:caridiskon/widget/filter.dart';
+import 'package:caridiskon/widget/filter_top20_page.dart';
 import 'package:flutter/material.dart';
 import 'package:caridiskon/helper/sizes.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -29,23 +29,23 @@ Widget top20PenawaranContent1(BuildContext context) {
           ),
         ),
         SizedBox(height: Sizes.dp2(context)),
-        BlocBuilder<FilterTipe, String>(
+        BlocBuilder<FilterTop20Tipe, String>(
           builder: (context, state) {
-            return filter1(context, state);
+            return filter1OfTop20Page(context, state);
           },
         ),
-        BlocBuilder<FilterKategori, String>(
+        BlocBuilder<FilterTop20Kategori, String>(
           builder: (context, state) {
             return filter2(context, state);
           },
         ),
-        BlocBuilder<FilterToko, String>(
+        BlocBuilder<FilterTop20Toko, String>(
           builder: (context, state) {
             return filter3(context, state);
           },
         ),
         SizedBox(height: Sizes.dp2(context)),
-        BlocBuilder<FilterAble, String>(
+        BlocBuilder<FilterTop20Able, String>(
           builder: (context, state) {
             return Container(
               //color: Colors.amber,
@@ -55,8 +55,8 @@ Widget top20PenawaranContent1(BuildContext context) {
               child: InkWell(
                 borderRadius: BorderRadius.circular(Sizes.dp2(context)),
                 onTap: () {
-                  BlocProvider.of<FilterButton>(context).add("Cari");
-                  BlocProvider.of<FilterName>(context).add("Cari");
+                  BlocProvider.of<FilterTop20Button>(context).add("Cari");
+                  BlocProvider.of<FilterTop20Name>(context).add("Cari");
                 },
                 child: Container(
                   alignment: Alignment.center,

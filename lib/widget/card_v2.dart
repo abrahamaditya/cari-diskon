@@ -1,6 +1,5 @@
 import 'package:caridiskon/helper/color.dart';
 import 'package:caridiskon/helper/page_routing/application.dart';
-import 'package:caridiskon/widget/search_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:caridiskon/helper/sizes.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -41,10 +40,10 @@ class cardV2 extends StatelessWidget {
         child: InkWell(
           borderRadius: BorderRadius.circular(Sizes.dp2(context)),
           onTap: () {
-            // Application.router.navigateTo(
-            //   context,
-            //   "/trending/$id",
-            // );
+            Application.router.navigateTo(
+              context,
+              "/trending/$id",
+            );
           },
           child: Container(
               padding: EdgeInsets.all(Sizes.dp2(context)),

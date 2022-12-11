@@ -1,15 +1,16 @@
-import 'dart:html';
-
 import 'package:caridiskon/helper/color.dart';
+import 'package:caridiskon/helper/page_routing/application.dart';
 import 'package:caridiskon/helper/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Searchbar extends StatelessWidget {
   final TextEditingController? controller;
+  final Application? route;
   const Searchbar({
     Key? key,
     this.controller,
+    this.route,
   });
 
   @override
@@ -38,6 +39,9 @@ class Searchbar extends StatelessWidget {
               ),
             ),
             controller: controller,
+            onFieldSubmitted: (value) {
+              Application.router.navigateTo(context, "/pencarian/$value");
+            },
             textAlignVertical: TextAlignVertical.center,
             decoration: InputDecoration(
               contentPadding: EdgeInsets.only(
@@ -68,7 +72,7 @@ class Searchbar extends StatelessWidget {
                 ),
               ),
               filled: true,
-              fillColor: Colors.white,
+              fillColor: white,
               border: InputBorder.none,
               // border: OutlineInputBorder(
               //   borderRadius: BorderRadius.circular(5),

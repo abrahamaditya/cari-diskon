@@ -1,4 +1,4 @@
-import 'package:caridiskon/BLoC/top_20_penawaran_page/top_20_penawaran_BLoC.dart';
+import 'package:caridiskon/BLoC/top_20_penawaran_BLoC.dart';
 import 'package:caridiskon/helper/color.dart';
 import 'package:flutter/material.dart';
 import 'package:caridiskon/helper/sizes.dart';
@@ -12,7 +12,7 @@ Widget top20PenawaranContent2(BuildContext context) {
         children: [
           Row(
             children: [
-              BlocBuilder<FilterResultLength, int>(
+              BlocBuilder<FilterTop20ResultLength, int>(
                 builder: (context, state) {
                   if (state == -1) {
                     return SizedBox.shrink();
@@ -57,13 +57,13 @@ Widget top20PenawaranContent2(BuildContext context) {
             ),
           ),
           SizedBox(width: Sizes.dp4(context)),
-          BlocBuilder<FilterPenilaian, String>(
+          BlocBuilder<FilterTop20Penilaian, String>(
             builder: (context, state) {
               return filterPenilaianButton(context, state);
             },
           ),
           SizedBox(width: Sizes.dp2(context)),
-          BlocBuilder<FilterMasaBerlaku, String>(
+          BlocBuilder<FilterTop20MasaBerlaku, String>(
             builder: (context, state) {
               return filterMasaBerlakuButton(context, state);
             },
@@ -82,8 +82,8 @@ Widget filterPenilaianButton(BuildContext context, String penilaian) {
       } else {
         penilaian = "worst";
       }
-      BlocProvider.of<FilterPenilaian>(context).add(penilaian);
-      BlocProvider.of<FilterName>(context).add("Penilaian");
+      BlocProvider.of<FilterTop20Penilaian>(context).add(penilaian);
+      BlocProvider.of<FilterTop20Name>(context).add("Penilaian");
     },
     child: Container(
       decoration: BoxDecoration(
@@ -123,8 +123,8 @@ Widget filterMasaBerlakuButton(BuildContext context, String masaBerlaku) {
       } else {
         masaBerlaku = "farthest";
       }
-      BlocProvider.of<FilterMasaBerlaku>(context).add(masaBerlaku);
-      BlocProvider.of<FilterName>(context).add("Masa Berlaku");
+      BlocProvider.of<FilterTop20MasaBerlaku>(context).add(masaBerlaku);
+      BlocProvider.of<FilterTop20Name>(context).add("Masa Berlaku");
     },
     child: Container(
       decoration: BoxDecoration(

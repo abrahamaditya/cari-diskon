@@ -1,6 +1,6 @@
 import 'package:caridiskon/helper/color.dart';
+import 'package:caridiskon/helper/page_routing/application.dart';
 import 'package:caridiskon/widget/card.dart';
-import 'package:caridiskon/widget/search_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:caridiskon/helper/sizes.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -55,19 +55,19 @@ Widget homeContent1(BuildContext context) {
             SizedBox(height: Sizes.dp4(context)),
             Row(
               children: [
-                card(context, "./logo/full/gojek.png"),
+                card(context, "./logo/full/gojek.png", "4"),
                 SizedBox(width: Sizes.dp4(context)),
-                card(context, "./logo/full/grab.png"),
+                card(context, "./logo/full/grab.png", "5"),
                 SizedBox(width: Sizes.dp4(context)),
-                card(context, "./logo/full/traveloka.png"),
+                card(context, "./logo/full/traveloka.png", "16"),
               ],
             ),
             SizedBox(height: Sizes.dp4(context)),
             Row(
               children: [
-                card(context, "./logo/full/airasiafood.png"),
+                card(context, "./logo/full/airasiafood.png", "0"),
                 SizedBox(width: Sizes.dp4(context)),
-                card(context, "./logo/full/shopeefood.png"),
+                card(context, "./logo/full/shopeefood.png", "13"),
                 SizedBox(width: Sizes.dp4(context)),
                 SizedBox(
                   width: Sizes.dp48(context),
@@ -79,7 +79,9 @@ Widget homeContent1(BuildContext context) {
                     elevation: 3.5,
                     child: InkWell(
                       borderRadius: BorderRadius.circular(Sizes.dp2(context)),
-                      onTap: () {},
+                      onTap: () {
+                        Application.router.navigateTo(context, "/toko");
+                      },
                       child: Container(
                         padding: EdgeInsets.all(Sizes.dp12(context)),
                         height: Sizes.dp12(context),
