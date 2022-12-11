@@ -1,5 +1,3 @@
-import 'package:caridiskon/data/filter.dart';
-import 'package:caridiskon/data/tukar_poin.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class RatingInput extends Bloc<double, double> {
