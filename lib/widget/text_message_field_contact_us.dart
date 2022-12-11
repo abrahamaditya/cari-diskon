@@ -1,5 +1,4 @@
 import 'package:caridiskon/BLoC/login_BLoC.dart';
-import 'package:caridiskon/BLoC/rating_BLoC.dart';
 import 'package:caridiskon/helper/color.dart';
 import 'package:caridiskon/helper/sizes.dart';
 import 'package:flutter/material.dart';

@@ -129,15 +129,6 @@ Widget homeContent3(BuildContext context) {
                   );
                 },
               ),
-              // child: ListView(
-              //   scrollDirection: Axis.horizontal,
-              //   children: [
-              //     cardV3(context, "./logo/gojek.png"),
-              //     cardV3(context, "./logo/gojek.png"),
-              //     cardV3(context, "./logo/gojek.png"),
-              //     cardV3(context, "./logo/gojek.png"),
-              //   ],
-              // ),
             ),
           ],
         ),

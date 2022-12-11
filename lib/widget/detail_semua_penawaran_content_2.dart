@@ -3,7 +3,6 @@ import 'package:caridiskon/BLoC/rating_BLoC.dart';
 import 'package:caridiskon/BLoC/tukar_poin_BLoC.dart';
 import 'package:caridiskon/data/account.dart';
 import 'package:caridiskon/data/semua_penawaran.dart';
-import 'package:caridiskon/data/tukar_poin.dart';
 import 'package:caridiskon/helper/color.dart';
 import 'package:caridiskon/helper/page_routing/application.dart';
 import 'package:caridiskon/widget/text_comment_field_comment.dart';
@@ -736,6 +735,10 @@ Widget detailAllPenawaranContent2(BuildContext context, SemuaPenawaran data) {
                                                         context: context,
                                                       );
                                                     }
+                                                  } else {
+                                                    Application.router
+                                                        .navigateTo(
+                                                            context, "/login");
                                                   }
                                                 },
                                                 child: Text(
@@ -757,7 +760,6 @@ Widget detailAllPenawaranContent2(BuildContext context, SemuaPenawaran data) {
                                   ),
                                 ),
                               )
-                            ///////////////////
                             : Align(
                                 alignment: Alignment.center,
                                 child: InkWell(
@@ -1044,6 +1046,9 @@ Widget detailAllPenawaranContent2(BuildContext context, SemuaPenawaran data) {
                                                   context: context,
                                                 );
                                               }
+                                            } else {
+                                              Application.router.navigateTo(
+                                                  context, "/login");
                                             }
                                           },
                                           child: Text(

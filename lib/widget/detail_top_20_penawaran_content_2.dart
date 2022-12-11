@@ -1,7 +1,6 @@
 import 'package:caridiskon/BLoC/login_BLoC.dart';
 import 'package:caridiskon/BLoC/rating_BLoC.dart';
 import 'package:caridiskon/data/account.dart';
-import 'package:caridiskon/data/review.dart';
 import 'package:caridiskon/data/top_20_penawaran.dart';
 import 'package:caridiskon/helper/color.dart';
 import 'package:caridiskon/widget/text_comment_field_comment.dart';
