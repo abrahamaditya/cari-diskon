@@ -78,7 +78,12 @@ flutter:
   uses-material-design: true
   assets:
     - assets/logo/
+    - assets/logo/frame/
+    - assets/logo/full/
+    - assets/logo/square/
     - assets/image/
+    - assets/image/brand/
+    - assets/image/profile_picture/
     - assets/illustration/
     - assets/animation/
 
