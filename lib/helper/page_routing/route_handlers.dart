@@ -1,7 +1,6 @@
 import 'package:caridiskon/page/contact_us_page.dart';
 import 'package:caridiskon/page/detail_semua_penawaran_page.dart';
 import 'package:caridiskon/page/detail_top_20_penawaran_page.dart';
-import 'package:caridiskon/page/detail_tukar_poin_page.dart';
 import 'package:caridiskon/page/login_page.dart';
 import 'package:caridiskon/page/home_page.dart';
 import 'package:caridiskon/page/kategori_page.dart';
