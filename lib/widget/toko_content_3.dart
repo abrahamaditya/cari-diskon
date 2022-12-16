@@ -77,7 +77,7 @@ Widget tokoContent3(BuildContext context) {
               },
             );
           } else {
-            return defaultResult(context);
+            return SizedBox.shrink();
           }
         },
       );
@@ -202,13 +202,18 @@ Widget resultFilterPenilaian(
 
 Widget resultCariSingleTipe(BuildContext context, List result) {
   List<SemuaPenawaran> filteredResult = [];
+  int counterNull = 0;
   semuapenawaran.forEach(
     (element) {
       if (element.type.contains(result[0]) == true) {
         filteredResult.add(element);
+        counterNull++;
       }
     },
   );
+  if (counterNull == 0) {
+    BlocProvider.of<FilterAllResultLength>(context).add(0);
+  }
   return Container(
     height: Sizes.dp60(context),
     width: Sizes.dp60(context),
@@ -234,13 +239,18 @@ Widget resultCariSingleTipe(BuildContext context, List result) {
 
 Widget resultCariSingleKategori(BuildContext context, List result) {
   List<SemuaPenawaran> filteredResult = [];
+  int counterNull = 0;
   semuapenawaran.forEach(
     (element) {
       if (element.category.contains(result[1]) == true) {
         filteredResult.add(element);
+        counterNull++;
       }
     },
   );
+  if (counterNull == 0) {
+    BlocProvider.of<FilterAllResultLength>(context).add(0);
+  }
   return Container(
     height: Sizes.dp60(context) + Sizes.dp10(context),
     width: Sizes.dp60(context),
@@ -266,13 +276,18 @@ Widget resultCariSingleKategori(BuildContext context, List result) {
 
 Widget resultCariSingleToko(BuildContext context, List result) {
   List<SemuaPenawaran> filteredResult = [];
+  int counterNull = 0;
   semuapenawaran.forEach(
     (element) {
       if (element.brand.compareTo(result[2]) == 0) {
         filteredResult.add(element);
+        counterNull++;
       }
     },
   );
+  if (counterNull == 0) {
+    BlocProvider.of<FilterAllResultLength>(context).add(0);
+  }
   return Container(
     height: Sizes.dp60(context),
     width: Sizes.dp60(context),
@@ -298,15 +313,20 @@ Widget resultCariSingleToko(BuildContext context, List result) {
 
 Widget resultCariDoubleKategoriToko(BuildContext context, List result) {
   List<SemuaPenawaran> filteredResult = [];
+  int counterNull = 0;
   semuapenawaran.forEach(
     (element) {
       if (element.brand.compareTo(result[2]) == 0) {
         if (element.category.contains(result[1]) == true) {
           filteredResult.add(element);
+          counterNull++;
         }
       }
     },
   );
+  if (counterNull == 0) {
+    BlocProvider.of<FilterAllResultLength>(context).add(0);
+  }
   return Container(
     height: Sizes.dp60(context),
     width: Sizes.dp60(context),
@@ -332,15 +352,20 @@ Widget resultCariDoubleKategoriToko(BuildContext context, List result) {
 
 Widget resultCariDoubleTipeToko(BuildContext context, List result) {
   List<SemuaPenawaran> filteredResult = [];
+  int counterNull = 0;
   semuapenawaran.forEach(
     (element) {
       if (element.brand.compareTo(result[2]) == 0) {
         if (element.type.contains(result[0]) == true) {
           filteredResult.add(element);
+          counterNull++;
         }
       }
     },
   );
+  if (counterNull == 0) {
+    BlocProvider.of<FilterAllResultLength>(context).add(0);
+  }
   return Container(
     height: Sizes.dp60(context),
     width: Sizes.dp60(context),
@@ -366,15 +391,20 @@ Widget resultCariDoubleTipeToko(BuildContext context, List result) {
 
 Widget resultCariDoubleTipeKategori(BuildContext context, List result) {
   List<SemuaPenawaran> filteredResult = [];
+  int counterNull = 0;
   semuapenawaran.forEach(
     (element) {
       if (element.category.contains(result[1]) == true) {
         if (element.type.contains(result[0]) == true) {
           filteredResult.add(element);
+          counterNull++;
         }
       }
     },
   );
+  if (counterNull == 0) {
+    BlocProvider.of<FilterAllResultLength>(context).add(0);
+  }
   return Container(
     height: Sizes.dp60(context),
     width: Sizes.dp60(context),
@@ -400,17 +430,22 @@ Widget resultCariDoubleTipeKategori(BuildContext context, List result) {
 
 Widget resultCariTriple(BuildContext context, List result) {
   List<SemuaPenawaran> filteredResult = [];
+  int counterNull = 0;
   semuapenawaran.forEach(
     (element) {
       if (element.brand.contains(result[2]) == true) {
         if (element.category.contains(result[1]) == true) {
           if (element.type.contains(result[0]) == true) {
             filteredResult.add(element);
+            counterNull++;
           }
         }
       }
     },
   );
+  if (counterNull == 0) {
+    BlocProvider.of<FilterAllResultLength>(context).add(0);
+  }
   return Container(
     height: Sizes.dp60(context),
     width: Sizes.dp60(context),
