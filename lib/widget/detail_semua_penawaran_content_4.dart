@@ -64,7 +64,8 @@ Widget resultFilterSuka(
       itemCount: result[i].review.length,
       itemBuilder: (BuildContext context, int index) {
         if (state == "best") {
-          result[i].review.sort(((a, b) => b.likes.compareTo(a.likes)));
+          result[i].review.sort(
+              ((a, b) => int.parse(b.likes).compareTo(int.parse(a.likes))));
           var filteredResult = result.map((value) => value).toList();
           BlocProvider.of<FilterAllResultDetail>(context).add(filteredResult);
           BlocProvider.of<FilterAllResultDetailLength>(context)
@@ -79,7 +80,8 @@ Widget resultFilterSuka(
             rating: semuapenawaran[i].review[index].rating,
           );
         } else if (state == "worst") {
-          result[i].review.sort(((a, b) => a.likes.compareTo(b.likes)));
+          result[i].review.sort(
+              ((a, b) => int.parse(a.likes).compareTo(int.parse(b.likes))));
           var filteredResult = result.map((value) => value).toList();
           BlocProvider.of<FilterAllResultDetail>(context).add(filteredResult);
           BlocProvider.of<FilterAllResultDetailLength>(context)
