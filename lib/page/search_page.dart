@@ -50,8 +50,6 @@ class SearchPage extends StatelessWidget {
     if (counterToko != 0) {
       emitToko = true;
     }
-    print(value);
-    print("toko = $emitToko");
     int counterPenawaran = 0;
     bool emitPenawaran = false;
     semuapenawaran.forEach(
@@ -64,7 +62,6 @@ class SearchPage extends StatelessWidget {
     if (counterPenawaran != 0) {
       emitPenawaran = true;
     }
-    print("penawaran = $emitPenawaran");
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

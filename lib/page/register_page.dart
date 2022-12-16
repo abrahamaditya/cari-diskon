@@ -377,10 +377,10 @@ class RegisterPage extends StatelessWidget {
                                 BorderRadius.circular(Sizes.dp2(context)),
                             onTap: () {
                               if (formKey.currentState!.validate() == true) {
-                                print("nama: " + nama!);
-                                print("email: " + email!);
-                                print("phone: " + phone!);
-                                print("password: " + password!);
+                                // print("nama: " + nama!);
+                                // print("email: " + email!);
+                                // print("phone: " + phone!);
+                                // print("password: " + password!);
                                 if (nama == "null" ||
                                     email == "null" ||
                                     email!.contains("@") == false ||
