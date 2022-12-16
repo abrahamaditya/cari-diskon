@@ -139,7 +139,6 @@ class ChatReviewBoxTukarPoin extends StatelessWidget {
                               )
                             : InkWell(
                                 onTap: () {
-                                  print("UnLiked!");
                                   likes = (int.parse(likes) - 1).toString();
                                   semuapenawaran[i].review[index].likes = likes;
                                   semuapenawaran[i].review[index].likeButton =
