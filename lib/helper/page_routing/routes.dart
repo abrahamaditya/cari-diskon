@@ -25,84 +25,100 @@ class Routes {
         handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
       return;
     });
-    router.define(home,
-        handler: homeHandler,
-        transitionType: TransitionType.inFromLeft,
-        transitionDuration: const Duration(milliseconds: 100));
+    router.define(
+      home,
+      handler: homeHandler,
+      transitionType: TransitionType.none,
+    );
 
-    router.define(top20Penawaran,
-        handler: top20PenawaranHandler,
-        transitionType: TransitionType.inFromLeft,
-        transitionDuration: const Duration(milliseconds: 100));
+    router.define(
+      top20Penawaran,
+      handler: top20PenawaranHandler,
+      transitionType: TransitionType.none,
+    );
 
-    router.define(detailTop20Penawaran,
-        handler: detailTop20PenawaranHandler,
-        transitionType: TransitionType.inFromLeft,
-        transitionDuration: const Duration(milliseconds: 100));
+    router.define(
+      detailTop20Penawaran,
+      handler: detailTop20PenawaranHandler,
+      transitionType: TransitionType.none,
+    );
 
-    router.define(detailAllPenawaran,
-        handler: detailAllPenawaranHandler,
-        transitionType: TransitionType.inFromLeft,
-        transitionDuration: const Duration(milliseconds: 100));
+    router.define(
+      detailAllPenawaran,
+      handler: detailAllPenawaranHandler,
+      transitionType: TransitionType.none,
+    );
 
-    router.define(kategori,
-        handler: kategoriHandler,
-        transitionType: TransitionType.inFromLeft,
-        transitionDuration: const Duration(milliseconds: 100));
+    router.define(
+      kategori,
+      handler: kategoriHandler,
+      transitionType: TransitionType.none,
+    );
 
-    router.define(semuaPenawaran,
-        handler: semuaPenawaranHandler,
-        transitionType: TransitionType.inFromLeft,
-        transitionDuration: const Duration(milliseconds: 100));
+    router.define(
+      semuaPenawaran,
+      handler: semuaPenawaranHandler,
+      transitionType: TransitionType.none,
+    );
 
-    router.define(tukarPoin,
-        handler: tukarPoinHandler,
-        transitionType: TransitionType.inFromLeft,
-        transitionDuration: const Duration(milliseconds: 100));
+    router.define(
+      tukarPoin,
+      handler: tukarPoinHandler,
+      transitionType: TransitionType.none,
+    );
 
-    router.define(detailTukarPoin,
-        handler: detailTukarPoinHandler,
-        transitionType: TransitionType.inFromLeft,
-        transitionDuration: const Duration(milliseconds: 100));
+    router.define(
+      detailTukarPoin,
+      handler: detailTukarPoinHandler,
+      transitionType: TransitionType.none,
+    );
 
-    router.define(semuaToko,
-        handler: semuaTokoHandler,
-        transitionType: TransitionType.inFromLeft,
-        transitionDuration: const Duration(milliseconds: 100));
+    router.define(
+      semuaToko,
+      handler: semuaTokoHandler,
+      transitionType: TransitionType.none,
+    );
 
-    router.define(detailToko,
-        handler: detailTokoHandler,
-        transitionType: TransitionType.inFromLeft,
-        transitionDuration: const Duration(milliseconds: 100));
+    router.define(
+      detailToko,
+      handler: detailTokoHandler,
+      transitionType: TransitionType.none,
+    );
 
-    router.define(detailTrending,
-        handler: detailTrendingHandler,
-        transitionType: TransitionType.inFromLeft,
-        transitionDuration: const Duration(milliseconds: 100));
+    router.define(
+      detailTrending,
+      handler: detailTrendingHandler,
+      transitionType: TransitionType.none,
+    );
 
-    router.define(detailEkslusif,
-        handler: detailEkslusifHandler,
-        transitionType: TransitionType.inFromLeft,
-        transitionDuration: const Duration(milliseconds: 100));
+    router.define(
+      detailEkslusif,
+      handler: detailEkslusifHandler,
+      transitionType: TransitionType.none,
+    );
 
-    router.define(login,
-        handler: loginHandler,
-        transitionType: TransitionType.inFromLeft,
-        transitionDuration: const Duration(milliseconds: 100));
+    router.define(
+      login,
+      handler: loginHandler,
+      transitionType: TransitionType.none,
+    );
 
-    router.define(register,
-        handler: registerHandler,
-        transitionType: TransitionType.inFromLeft,
-        transitionDuration: const Duration(milliseconds: 100));
+    router.define(
+      register,
+      handler: registerHandler,
+      transitionType: TransitionType.none,
+    );
 
-    router.define(search,
-        handler: searchHandler,
-        transitionType: TransitionType.inFromLeft,
-        transitionDuration: const Duration(milliseconds: 100));
+    router.define(
+      search,
+      handler: searchHandler,
+      transitionType: TransitionType.none,
+    );
 
-    router.define(contactUs,
-        handler: contactUsHandler,
-        transitionType: TransitionType.inFromLeft,
-        transitionDuration: const Duration(milliseconds: 100));
+    router.define(
+      contactUs,
+      handler: contactUsHandler,
+      transitionType: TransitionType.none,
+    );
   }
 }
