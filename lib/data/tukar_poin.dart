@@ -77,9 +77,9 @@ var TukarPoinData = [
     'name': 'Diskon GrabFood untuk semua makanan',
     'poin': '20',
     'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+        'Berlaku untuk semua makanan dan minuman untuk mitra tertentu.',
+    'description2': 'Diskon pembelian tidak termasuk tarif pengiriman.',
+    'description3': 'Diskon hanya dapat digunakan 1x pemakaian.',
     'amount': '20%',
     'brand': 'GrabFood',
     'logo': 'assets/logo/square/grabfood.png',
@@ -117,7 +117,7 @@ var TukarPoinData = [
         'likeButton': false,
       },
       {
-        'id': '3',
+        'id': '2',
         'GUID': '49cea621-ff53-45d1-b782-cfe1a07d02b4',
         'name': 'Paulin Sinarwati',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -128,7 +128,7 @@ var TukarPoinData = [
         'likeButton': false,
       },
       {
-        'id': '4',
+        'id': '3',
         'GUID': '0bfa43dd-6afd-4798-a241-f84be37d55975',
         'name': 'Andriani Siregar',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -139,7 +139,7 @@ var TukarPoinData = [
         'likeButton': false,
       },
       {
-        'id': '5',
+        'id': '4',
         'GUID': '4246578e-e203-406a-bf31-d3b6a625f704',
         'name': 'Putra',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -150,7 +150,7 @@ var TukarPoinData = [
         'likeButton': false,
       },
       {
-        'id': '6',
+        'id': '5',
         'GUID': '75b796c9-1c53-4929-b5ce-328f3d086dc8',
         'name': 'Himawan Maryadi',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -181,10 +181,10 @@ var TukarPoinData = [
     'GUID': '48e5275b-0884-44da-a231-affbd0c02a3b',
     'name': 'Promo KFC paket combo',
     'poin': '10',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Berlaku khusus untuk paket combo.',
+    'description2':
+        'Diskon promo tidak dapat digunakan melalui drive-thru ataupun pemesanan online.',
+    'description3': 'Promo hanya dapat digunakan pada aplikasi.',
     'amount': '20%',
     'brand': 'KFC',
     'logo': 'assets/logo/square/kfc.png',
@@ -192,14 +192,14 @@ var TukarPoinData = [
     'image': 'assets/image/brand/kfc.png',
     'deadline': '4 HARI LAGI',
     'type': 'Kode',
-    'code': 'ABC123',
+    'code': 'FWZ425',
     'website': 'null',
     'category': 'Makanan & Minuman',
     'rating': '4.5',
     'totalRating': '183',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': 'b286f77a-ea20-4404-9e51-6a54ff6bfdf9',
         'name': 'Cahyanto Firmansyah',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -210,7 +210,7 @@ var TukarPoinData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '20d6aeeb-a7a9-4205-a145-c5c3503ea49f',
         'name': 'Eka',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -221,7 +221,7 @@ var TukarPoinData = [
         'likeButton': false,
       },
       {
-        'id': '3',
+        'id': '2',
         'GUID': 'aea8181c-eba6-415f-ae1a-926e2a860e01',
         'name': 'Wasis',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -232,7 +232,7 @@ var TukarPoinData = [
         'likeButton': false,
       },
       {
-        'id': '4',
+        'id': '3',
         'GUID': 'e19b694f-4ae2-4840-84fc-31dedff12f5c',
         'name': 'Maimunah',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -264,9 +264,9 @@ var TukarPoinData = [
     'name': 'Diskon semua pizza hanya di Pizza Hut area Jabodetabek',
     'poin': '10',
     'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+        'Berlaku untuk semua jenis pizza untuk area Jabodetabek (Jakarta-Bogor-Depok-Tangerang-Bekasi).',
+    'description2': 'Diskon pembelian tidak termasuk tarif pengiriman.',
+    'description3': 'Diskon hanya dapat digunakan 2x pemakaian.',
     'amount': '25%',
     'brand': 'Pizza Hut',
     'logo': 'assets/logo/square/pizzahut.png',
@@ -281,7 +281,7 @@ var TukarPoinData = [
     'totalRating': '107',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': 'fe054001-e412-425f-907e-b10992187c1f',
         'name': 'Yahya',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -292,7 +292,7 @@ var TukarPoinData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '24289a9f-5806-4b89-89be-ffdb069ea8da',
         'name': 'Balapati Mustofa',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -323,10 +323,10 @@ var TukarPoinData = [
     'GUID': '2734dd59-64f8-4249-8fc2-bf4f5cc242a6',
     'name': 'Hemat 60% menu PaNas 2 di McDonald\'s',
     'poin': '40',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Berlaku hanya untuk menu PaNas 2 di McDonald\'s.',
+    'description2':
+        'Diskon pembelian tidak termasuk tarif pengiriman bagi pemesanan dilakukan melalui pengiriman (delivery).',
+    'description3': 'Diskon hanya dapat digunakan 1x pemakaian.',
     'amount': '60%',
     'brand': 'McDonald\'s',
     'logo': 'assets/logo/square/mcdonalds.png',
@@ -341,7 +341,7 @@ var TukarPoinData = [
     'totalRating': '230',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': '8ff89612-d9d5-49b9-8e77-c4d231e7dc54',
         'name': 'Prabowo',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -352,7 +352,7 @@ var TukarPoinData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '1946cb77-d396-4e76-ad51-be7d7efbdfe3',
         'name': 'Belinda Anggraini',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -363,7 +363,7 @@ var TukarPoinData = [
         'likeButton': false,
       },
       {
-        'id': '3',
+        'id': '2',
         'GUID': 'cac87f15-c1f3-4510-92c9-5103f5bf5455',
         'name': 'Kusmani',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -374,7 +374,7 @@ var TukarPoinData = [
         'likeButton': false,
       },
       {
-        'id': '4',
+        'id': '3',
         'GUID': 'f6f6d161-7168-48cf-840b-dd34f403ca22',
         'name': 'Tabita',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -405,10 +405,9 @@ var TukarPoinData = [
     'GUID': '959de8e4-c2d7-4e7b-b0cf-231f5a1a61e5',
     'name': 'Nikmati potongan isi ulang pulsa di Tokopedia',
     'poin': '25',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Berlaku untuk semua layanan prabayar.',
+    'description2': 'Promo berlaku hanya di aplikasi.',
+    'description3': 'Promo hanya dapat digunakan 1x pemakaian.',
     'amount': '50%',
     'brand': 'Tokopedia',
     'logo': 'assets/logo/square/tokopedia.png',
@@ -416,14 +415,14 @@ var TukarPoinData = [
     'image': 'assets/image/brand/tokopedia.png',
     'deadline': '1 HARI LAGI',
     'type': 'Kode',
-    'code': 'ABC123',
+    'code': 'MRY824',
     'website': 'null',
     'category': 'Lainnya',
     'rating': '4.8',
     'totalRating': '83',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': '4c893e85-dc83-4643-9996-a2783a256eb4',
         'name': 'Mirani',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -454,10 +453,10 @@ var TukarPoinData = [
     'GUID': 'fc6af9c2-ff13-498f-bc64-218ee4992108',
     'name': 'Potongan 50% naik GrabCar',
     'poin': '50',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Berlaku untuk semua rute perjalanan.',
+    'description2': 'Diskon tidak ada ketentuan maksimal kilometer perjalanan.',
+    'description3':
+        'Diskon hanya dapat digunakan 2x pemakaian selama persediaan masih ada.',
     'amount': '50%',
     'brand': 'Grab',
     'logo': 'assets/logo/square/grab.png',
@@ -472,7 +471,7 @@ var TukarPoinData = [
     'totalRating': '131',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': '7822fcfa-1e43-4d5b-9e6b-818c19674f8f',
         'name': 'Salimah Nasyiah',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -483,7 +482,7 @@ var TukarPoinData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '03a733a4-1a58-4764-9e9c-6067baf75b30',
         'name': 'Karso',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -494,7 +493,7 @@ var TukarPoinData = [
         'likeButton': false,
       },
       {
-        'id': '3',
+        'id': '2',
         'GUID': '6bb7bdba-891c-4c59-8bed-8dfe1ab3eb2a',
         'name': 'Mihwa',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -525,10 +524,9 @@ var TukarPoinData = [
     'GUID': '96703f6a-8ab0-4afc-8fef-aaee7ffe9af1',
     'name': 'Promo member di Starbucks',
     'poin': '50',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Hanya berlaku untuk setiap member Starbucks.',
+    'description2': 'Promo pembelian hanya melalui aplikasi.',
+    'description3': 'Promo hanya dapat digunakan 1x pemakaian.',
     'amount': '5%',
     'brand': 'Starbucks',
     'logo': 'assets/logo/square/starbucks.png',
@@ -536,14 +534,14 @@ var TukarPoinData = [
     'image': 'assets/image/brand/starbucks.png',
     'deadline': '1 HARI LAGI',
     'type': 'Kode',
-    'code': 'ABC123',
+    'code': 'SBN429',
     'website': 'null',
     'category': 'Makanan & Minuman',
     'rating': '4.9',
     'totalRating': '180',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': '38208864-b69a-4825-8019-2803059d475c',
         'name': 'Yani Oktaviani',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -554,7 +552,7 @@ var TukarPoinData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '835de080-dae0-40a5-97c5-e6ddd8d4a428',
         'name': 'Farida',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -585,10 +583,9 @@ var TukarPoinData = [
     'GUID': 'a8bbcd81-c4fd-4f71-9cf3-ec9859d54510',
     'name': 'Diskon untuk semua pizza di Domino\'s Pizza',
     'poin': '75',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Berlaku untuk semua menu pizza di area khusus Jakarta.',
+    'description2': 'Diskon pembelian hanya melalui aplikasi.',
+    'description3': 'Diskon hanya dapat digunakan 1x pemakaian.',
     'amount': '15%',
     'brand': 'Domino\'s Pizza',
     'logo': 'assets/logo/square/dominospizza.png',
@@ -603,7 +600,7 @@ var TukarPoinData = [
     'totalRating': '111',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': '890daba4-fdae-4008-b4c7-6f2f700d2aff',
         'name': 'Hendri',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -614,7 +611,7 @@ var TukarPoinData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '2e4f9ace-f475-4a17-837e-bc6140026073',
         'name': 'Juli Nasyiah',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -625,7 +622,7 @@ var TukarPoinData = [
         'likeButton': false,
       },
       {
-        'id': '3',
+        'id': '2',
         'GUID': '690be27e-f4eb-4bea-93bb-32f0b823adc9',
         'name': 'Tasya',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',

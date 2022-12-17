@@ -83,9 +83,9 @@ var SemuaPenawaranData = [
     'name': 'Diskon GrabFood untuk semua makanan',
     'poin': '20',
     'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+        'Berlaku untuk semua makanan dan minuman untuk mitra tertentu.',
+    'description2': 'Diskon pembelian tidak termasuk tarif pengiriman.',
+    'description3': 'Diskon hanya dapat digunakan 1x pemakaian.',
     'amount': '20%',
     'brand': 'GrabFood',
     'logo': 'assets/logo/square/grabfood.png',
@@ -125,7 +125,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '3',
+        'id': '2',
         'GUID': '49cea621-ff53-45d1-b782-cfe1a07d02b4',
         'name': 'Paulin Sinarwati',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -136,7 +136,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '4',
+        'id': '3',
         'GUID': '0bfa43dd-6afd-4798-a241-f84be37d55975',
         'name': 'Andriani Siregar',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -147,7 +147,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '5',
+        'id': '4',
         'GUID': '4246578e-e203-406a-bf31-d3b6a625f704',
         'name': 'Putra',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -158,7 +158,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '6',
+        'id': '5',
         'GUID': '75b796c9-1c53-4929-b5ce-328f3d086dc8',
         'name': 'Himawan Maryadi',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -189,10 +189,10 @@ var SemuaPenawaranData = [
     'GUID': 'a0789dc3-774b-4121-8dbb-b7cbf0c9b997',
     'name': 'Cashback Bukalapak untuk produk elektronik',
     'poin': 'null',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Berlaku untuk semua produk pada ketegori elektronik.',
+    'description2':
+        'Kategori elektronik tidak termasuk perangkat komputer dan sejenisnya.',
+    'description3': 'Promo hanya dapat digunakan 1x pemakaian.',
     'amount': '10 Ribu',
     'brand': 'Bukalapak',
     'logo': 'assets/logo/square/bukalapak.png',
@@ -202,14 +202,14 @@ var SemuaPenawaranData = [
     'type': 'Kode',
     'status': 'null',
     'reward': '5',
-    'code': 'ABC123',
+    'code': 'WFB530',
     'website': 'null',
     'category': 'Elektronik',
     'rating': '4.5',
     'totalRating': '282',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': '5178782d-0b49-4e03-bd15-319946bd6557',
         'name': 'Anon',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -221,7 +221,7 @@ var SemuaPenawaranData = [
         'likeButton': false
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '3b5d2e7f-7dc5-428b-854f-60cc34b837df',
         'name': 'Arif Siahaan',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -232,7 +232,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '3',
+        'id': '2',
         'GUID': 'e51af450-a8c3-4804-a861-72e53b5aea58',
         'name': 'Rizki Rizal',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -263,10 +263,10 @@ var SemuaPenawaranData = [
     'GUID': '48e5275b-0884-44da-a231-affbd0c02a3b',
     'name': 'Promo KFC paket combo',
     'poin': '10',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Berlaku khusus untuk paket combo.',
+    'description2':
+        'Diskon promo tidak dapat digunakan melalui drive-thru ataupun pemesanan online.',
+    'description3': 'Promo hanya dapat digunakan pada aplikasi.',
     'amount': '20%',
     'brand': 'KFC',
     'logo': 'assets/logo/square/kfc.png',
@@ -276,14 +276,14 @@ var SemuaPenawaranData = [
     'type': 'Kode',
     'status': 'Tukar Poin',
     'reward': '5',
-    'code': 'ABC123',
+    'code': 'FWZ425',
     'website': 'null',
     'category': 'Makanan & Minuman',
     'rating': '4.5',
     'totalRating': '183',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': 'b286f77a-ea20-4404-9e51-6a54ff6bfdf9',
         'name': 'Cahyanto Firmansyah',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -294,7 +294,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '20d6aeeb-a7a9-4205-a145-c5c3503ea49f',
         'name': 'Eka',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -305,7 +305,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '3',
+        'id': '2',
         'GUID': 'aea8181c-eba6-415f-ae1a-926e2a860e01',
         'name': 'Wasis',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -316,7 +316,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '4',
+        'id': '3',
         'GUID': 'e19b694f-4ae2-4840-84fc-31dedff12f5c',
         'name': 'Maimunah',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -347,10 +347,10 @@ var SemuaPenawaranData = [
     'GUID': 'ab329cda-da44-461b-bc5f-7a035f7dc303',
     'name': 'Potongan ongkir di GoFood',
     'poin': 'null',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Berlaku untuk 5 Kilometer pertamamu.',
+    'description2':
+        'Potongan ongkir hanya dapat digunakan untuk pengantaran mealui GoSend.',
+    'description3': 'Promo hanya dapat digunakan 1x pemakaian.',
     'amount': '10 Ribu',
     'brand': 'GoFood',
     'logo': 'assets/logo/square/gofood.png',
@@ -360,14 +360,14 @@ var SemuaPenawaranData = [
     'type': 'Kode',
     'status': 'null',
     'reward': '10',
-    'code': 'ABC123',
+    'code': 'GDM579',
     'website': 'null',
     'category': 'Makanan & Minuman',
     'rating': '4.5',
     'totalRating': '331',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': 'a554b55b-22c5-41a3-a347-8d3c38de5a7a',
         'name': 'Melinda',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -378,7 +378,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '04f89913-be6a-4e81-8f99-4f3880daa0f9',
         'name': 'Zulaikha Handayani',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -389,7 +389,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '3',
+        'id': '2',
         'GUID': '701577fb-7c89-4daa-8290-549c2c52c7a3',
         'name': 'Bambang',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -421,9 +421,9 @@ var SemuaPenawaranData = [
     'name': 'Diskon semua pizza hanya di Pizza Hut area Jabodetabek',
     'poin': '10',
     'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+        'Berlaku untuk semua jenis pizza untuk area Jabodetabek (Jakarta-Bogor-Depok-Tangerang-Bekasi).',
+    'description2': 'Diskon pembelian tidak termasuk tarif pengiriman.',
+    'description3': 'Diskon hanya dapat digunakan 2x pemakaian.',
     'amount': '25%',
     'brand': 'Pizza Hut',
     'logo': 'assets/logo/square/pizzahut.png',
@@ -440,7 +440,7 @@ var SemuaPenawaranData = [
     'totalRating': '107',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': 'fe054001-e412-425f-907e-b10992187c1f',
         'name': 'Yahya',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -451,7 +451,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '24289a9f-5806-4b89-89be-ffdb069ea8da',
         'name': 'Balapati Mustofa',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -482,10 +482,10 @@ var SemuaPenawaranData = [
     'GUID': '7d2150fc-f259-4da6-9190-22a8f1a005f8',
     'name': 'Gratis ongkir sepuasnya',
     'poin': 'null',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Berlaku untuk seluruh area Indonesia.',
+    'description2':
+        'Promo tidak tersedia jika menggunakan aplikasi pemesanan pihak ketiga.',
+    'description3': 'Promo hanya dapat digunakan 1x pemakaian.',
     'amount': '100%',
     'brand': 'PHD',
     'logo': 'assets/logo/square/pizzahutdelivery.png',
@@ -495,25 +495,25 @@ var SemuaPenawaranData = [
     'type': 'Kode',
     'status': 'null',
     'reward': '15',
-    'code': 'ABC123',
+    'code': 'VDA531',
     'website': 'null',
     'category': 'Makanan & Minuman',
     'rating': '4.95',
     'totalRating': '474',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': '77cce0d7-2edf-4ff2-a508-3d6c0af30cbd',
         'name': 'Ratna',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
         'date': '2 hari yang lalu',
         'comment': 'Heran ya masih banyak yang ragu, udh tau jelas2 works gini',
         'rating': '5.0',
-        'likes': '101',
+        'likes': '3',
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '251e2373-61cf-4c24-88db-51fdca09794d',
         'name': 'Darmaji',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -544,10 +544,9 @@ var SemuaPenawaranData = [
     'GUID': '9bcd3963-8efd-470e-8e79-a5cc8b7d3fe9',
     'name': 'Diskon booking tiket pesawat di Traveloka',
     'poin': 'null',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Berlaku untuk rute dalam negeri.',
+    'description2': 'Diskon booking tiket tidak dapat di refund.',
+    'description3': 'Diskon hanya dapat digunakan 1x pemakaian.',
     'amount': '30%',
     'brand': 'Traveloka',
     'logo': 'assets/logo/square/traveloka.png',
@@ -564,7 +563,7 @@ var SemuaPenawaranData = [
     'totalRating': '123',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': 'd069d9a8-d7da-4c33-a972-693dca859fcf',
         'name': 'Usman',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -576,7 +575,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': 'bde00102-c3a8-4b82-b9c4-a4b2db331067',
         'name': 'Lalisa',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -587,14 +586,14 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '3',
+        'id': '2',
         'GUID': 'b13a1039-1bf3-4426-a1ec-a87077e49287',
         'name': 'Upik Lazuardi',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
         'date': '2 hari yang lalu',
         'comment': 'Bersyukur udh tau ini dari lama',
         'rating': '5.0',
-        'likes': '101',
+        'likes': '0',
         'likeButton': false,
       },
     ]
@@ -618,10 +617,10 @@ var SemuaPenawaranData = [
     'GUID': '2734dd59-64f8-4249-8fc2-bf4f5cc242a6',
     'name': 'Hemat 60% menu PaNas 2 di McDonald\'s',
     'poin': '40',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Berlaku hanya untuk menu PaNas 2 di McDonald\'s.',
+    'description2':
+        'Diskon pembelian tidak termasuk tarif pengiriman bagi pemesanan dilakukan melalui pengiriman (delivery).',
+    'description3': 'Diskon hanya dapat digunakan 1x pemakaian.',
     'amount': '60%',
     'brand': 'McDonald\'s',
     'logo': 'assets/logo/square/mcdonalds.png',
@@ -638,7 +637,7 @@ var SemuaPenawaranData = [
     'totalRating': '230',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': '8ff89612-d9d5-49b9-8e77-c4d231e7dc54',
         'name': 'Prabowo',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -649,7 +648,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '1946cb77-d396-4e76-ad51-be7d7efbdfe3',
         'name': 'Belinda Anggraini',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -660,7 +659,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '3',
+        'id': '2',
         'GUID': 'cac87f15-c1f3-4510-92c9-5103f5bf5455',
         'name': 'Kusmani',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -671,7 +670,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '4',
+        'id': '3',
         'GUID': 'f6f6d161-7168-48cf-840b-dd34f403ca22',
         'name': 'Tabita',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -702,10 +701,9 @@ var SemuaPenawaranData = [
     'GUID': '38083e8a-08df-4c68-a908-92e5f036bd32',
     'name': 'Diskon ongkir Gojek',
     'poin': 'null',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Berlaku untuk semua jenis barang dan berat.',
+    'description2': 'Pembayaran hanya melaui GoPay yang dapat diterima.',
+    'description3': 'Diskon hanya dapat digunakan 1x pemakaian.',
     'amount': '80%',
     'brand': 'Gojek',
     'logo': 'assets/logo/square/gojek.png',
@@ -722,7 +720,7 @@ var SemuaPenawaranData = [
     'totalRating': '299',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': '1b6eeb5c-20d4-4c14-a609-c42156efe090',
         'name': 'Richard',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -733,7 +731,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': 'b9c37c70-089e-4b96-9254-d064f085fff6',
         'name': 'Kairav Simanjuntak',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -765,9 +763,9 @@ var SemuaPenawaranData = [
     'name': 'Gratis ongkir di ShopeeFood',
     'poin': 'null',
     'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+        'Berlaku untuk semua makanan dan minuman untuk mitra tertentu.',
+    'description2': 'Pembayaran hanya melalui ShopeePay.',
+    'description3': 'Promo hanya dapat digunakan 1x pemakaian.',
     'amount': '100%',
     'brand': 'ShopeeFood',
     'logo': 'assets/logo/square/shopeefood.png',
@@ -777,14 +775,14 @@ var SemuaPenawaranData = [
     'type': 'Kode',
     'status': 'null',
     'reward': '10',
-    'code': 'ABC123',
+    'code': 'CBA332',
     'website': 'null',
     'category': 'Makanan & Minuman',
     'rating': '4.8',
     'totalRating': '311',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': 'c4610d90-23b7-4c6a-ac1c-c8af91ed9d1d',
         'name': 'Titi',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -795,7 +793,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '9b6eeba3-8de2-4c74-ac88-c8fe46e9ef21',
         'name': 'Dodo',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -806,7 +804,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '3',
+        'id': '2',
         'GUID': '20383e93-dba9-4c8e-b8fe-be231e5aa05b',
         'name': 'Nirma',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -817,7 +815,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '4',
+        'id': '3',
         'GUID': '3eb36ce9-4e24-48f4-afad-8c3e938abc86',
         'name': 'Jono Samurasun',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -848,10 +846,10 @@ var SemuaPenawaranData = [
     'GUID': 'f114c552-7234-4568-87ed-d75073c762cc',
     'name': 'Cashback 10% hanya di Richeese Factory',
     'poin': 'null',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Berlaku untuk semua makanan dan minuman.',
+    'description2':
+        'Diskon pembelian hanya dapat dilakukan pada gerai-gerai tertentu.',
+    'description3': 'Diskon hanya dapat digunakan 1x pemakaian.',
     'amount': '10%',
     'brand': 'Richeese Factory',
     'logo': 'assets/logo/square/richeesefactory.png',
@@ -868,7 +866,7 @@ var SemuaPenawaranData = [
     'totalRating': '39',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': 'f7ea27ae-c6af-467b-882b-07454326f36a',
         'name': 'Ricky',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -879,7 +877,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': 'c70e233d-8ca2-4a27-9ebe-b3c46acb02dc',
         'name': 'Uwais',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -910,10 +908,9 @@ var SemuaPenawaranData = [
     'GUID': '959de8e4-c2d7-4e7b-b0cf-231f5a1a61e5',
     'name': 'Nikmati potongan isi ulang pulsa di Tokopedia',
     'poin': '25',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Berlaku untuk semua layanan prabayar.',
+    'description2': 'Promo berlaku hanya di aplikasi.',
+    'description3': 'Promo hanya dapat digunakan 1x pemakaian.',
     'amount': '50%',
     'brand': 'Tokopedia',
     'logo': 'assets/logo/square/tokopedia.png',
@@ -923,14 +920,14 @@ var SemuaPenawaranData = [
     'type': 'Kode',
     'status': 'Tukar Poin',
     'reward': '5',
-    'code': 'ABC123',
+    'code': 'MRY824',
     'website': 'null',
     'category': 'Lainnya',
     'rating': '4.8',
     'totalRating': '83',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': '4c893e85-dc83-4643-9996-a2783a256eb4',
         'name': 'Mirani',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -961,10 +958,10 @@ var SemuaPenawaranData = [
     'GUID': '925d1709-5412-45e6-8fa9-31a0a74e0a17',
     'name': 'Gratis seluruh pembelian melalui AirAsia Food',
     'poin': 'null',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Hanya berlaku untuk pengguna baru.',
+    'description2':
+        'Promo gratis 100% termasuk ongkir nya (jika dipesan secara online).',
+    'description3': 'Promo hanya dapat digunakan 1x pemakaian.',
     'amount': '100%',
     'brand': 'AirAsia Food',
     'logo': 'assets/logo/square/airasiafood.png',
@@ -974,14 +971,14 @@ var SemuaPenawaranData = [
     'type': 'Kode',
     'status': 'null',
     'reward': '5',
-    'code': 'ABC123',
+    'code': 'MRW975',
     'website': 'null',
     'category': 'Makanan & Minuman',
     'rating': '4.95',
     'totalRating': '77',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': '4140abe8-e210-4d73-92f8-7f92ef5b33d5',
         'name': 'Igin Septiady',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -993,7 +990,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '436b404f-4d62-4f5d-9dd2-5ed7002072a7',
         'name': 'Natsir',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1024,10 +1021,10 @@ var SemuaPenawaranData = [
     'GUID': 'fc6af9c2-ff13-498f-bc64-218ee4992108',
     'name': 'Potongan 50% naik GrabCar',
     'poin': '50',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Berlaku untuk semua rute perjalanan.',
+    'description2': 'Diskon tidak ada ketentuan maksimal kilometer perjalanan.',
+    'description3':
+        'Diskon hanya dapat digunakan 2x pemakaian selama persediaan masih ada.',
     'amount': '50%',
     'brand': 'Grab',
     'logo': 'assets/logo/square/grab.png',
@@ -1044,7 +1041,7 @@ var SemuaPenawaranData = [
     'totalRating': '131',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': '7822fcfa-1e43-4d5b-9e6b-818c19674f8f',
         'name': 'Salimah Nasyiah',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1055,7 +1052,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '03a733a4-1a58-4764-9e9c-6067baf75b30',
         'name': 'Karso',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1066,7 +1063,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '3',
+        'id': '2',
         'GUID': '6bb7bdba-891c-4c59-8bed-8dfe1ab3eb2a',
         'name': 'Mihwa',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1097,10 +1094,9 @@ var SemuaPenawaranData = [
     'GUID': '58c864b5-d228-44ce-8a91-7c41e8abfaef',
     'name': 'Potongan hingga 30k di Traveloka Eats',
     'poin': 'null',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Berlaku untuk semua makanan dan minuman.',
+    'description2': 'Diskon pembelian termasuk tarif pengiriman.',
+    'description3': 'Diskon hanya dapat digunakan 1x pemakaian.',
     'amount': '70%',
     'brand': 'Traveloka Eats',
     'logo': 'assets/logo/square/travelokaeats.png',
@@ -1117,7 +1113,7 @@ var SemuaPenawaranData = [
     'totalRating': '149',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': '63bbd378-8a1f-490f-a5d2-0415b63dd2f4',
         'name': 'Steven',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1128,7 +1124,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '91a9f3b6-4d7f-432a-b8d6-757bee08edb0',
         'name': 'Rio',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1139,7 +1135,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '3',
+        'id': '2',
         'GUID': '0638b90f-2e20-48a3-b93c-860fa9bf0491',
         'name': 'Arsipatra Santoso',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1172,9 +1168,10 @@ var SemuaPenawaranData = [
     'name': 'Diskon sepatu olahraga hanya di Shopee',
     'poin': 'null',
     'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+        'Berlaku untuk semua jenis sepatu olahraga di mitra ShopeeMall.',
+    'description2': 'Diskon pembelian termasuk tarif pengiriman.',
+    'description3':
+        'Diskon hanya dapat digunakan 3x pemakaian selama persediaan masih ada.',
     'amount': '50%',
     'brand': 'Shopee',
     'logo': 'assets/logo/square/shopee.png',
@@ -1191,7 +1188,7 @@ var SemuaPenawaranData = [
     'totalRating': '150',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': 'e956c631-c455-4084-b5c4-dff674b5b420',
         'name': 'Artanto',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1202,7 +1199,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': 'e7cc2183-8e0b-4e63-a5ba-29b3f20e4042',
         'name': 'Prasasta',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1233,10 +1230,9 @@ var SemuaPenawaranData = [
     'GUID': '0c5251dd-0ff6-4b2b-9503-8837594b3d7e',
     'name': 'Diskon produk kecantikan di Tokopedia',
     'poin': 'null',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Berlaku untuk semua produk kecantikan.',
+    'description2': 'Diskon pembelian hanya berlaku untuk official store.',
+    'description3': 'Diskon hanya dapat digunakan 1x pemakaian.',
     'amount': '10%',
     'brand': 'Tokopedia',
     'logo': 'assets/logo/square/tokopedia.png',
@@ -1253,7 +1249,7 @@ var SemuaPenawaranData = [
     'totalRating': '153',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': '1b1a4552-ecf0-4e51-9942-a4d1548ffa83',
         'name': 'Halim',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1265,7 +1261,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '4009fb25-efa7-4d12-9863-abdbabd3e385',
         'name': 'Umar Pratama',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1276,7 +1272,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '3',
+        'id': '2',
         'GUID': '5678352e-9dac-4a0e-89c3-787e0a40c440',
         'name': 'Cindy Gunardi',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1307,10 +1303,9 @@ var SemuaPenawaranData = [
     'GUID': '96703f6a-8ab0-4afc-8fef-aaee7ffe9af1',
     'name': 'Promo member di Starbucks',
     'poin': '50',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Hanya berlaku untuk setiap member Starbucks.',
+    'description2': 'Promo pembelian hanya melalui aplikasi.',
+    'description3': 'Promo hanya dapat digunakan 1x pemakaian.',
     'amount': '5%',
     'brand': 'Starbucks',
     'logo': 'assets/logo/square/starbucks.png',
@@ -1320,14 +1315,14 @@ var SemuaPenawaranData = [
     'type': 'Kode',
     'status': 'Tukar Poin',
     'reward': '25',
-    'code': 'ABC123',
+    'code': 'SBN429',
     'website': 'null',
     'category': 'Makanan & Minuman',
     'rating': '4.9',
     'totalRating': '180',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': '38208864-b69a-4825-8019-2803059d475c',
         'name': 'Yani Oktaviani',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1338,7 +1333,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '835de080-dae0-40a5-97c5-e6ddd8d4a428',
         'name': 'Farida',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1370,9 +1365,9 @@ var SemuaPenawaranData = [
     'name': 'Diskon fashion muslim hanya di Shopee',
     'poin': 'null',
     'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+        'Berlaku untuk semua produk fashion di kategori fashion muslim.',
+    'description2': 'Diskon pembelian tidak termasuk tarif pengiriman.',
+    'description3': 'Diskon hanya dapat digunakan 1x pemakaian.',
     'amount': '15%',
     'brand': 'Shopee',
     'logo': 'assets/logo/square/shopee.png',
@@ -1389,7 +1384,7 @@ var SemuaPenawaranData = [
     'totalRating': '201',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': '0f99eaee-b8bd-4fc8-bdcb-0cdf6defd594',
         'name': 'Iriana',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1420,10 +1415,9 @@ var SemuaPenawaranData = [
     'GUID': 'a8bbcd81-c4fd-4f71-9cf3-ec9859d54510',
     'name': 'Diskon untuk semua pizza di Domino\'s Pizza',
     'poin': '75',
-    'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+    'description1': 'Berlaku untuk semua menu pizza di area khusus Jakarta.',
+    'description2': 'Diskon pembelian hanya melalui aplikasi.',
+    'description3': 'Diskon hanya dapat digunakan 1x pemakaian.',
     'amount': '15%',
     'brand': 'Domino\'s Pizza',
     'logo': 'assets/logo/square/dominospizza.png',
@@ -1440,7 +1434,7 @@ var SemuaPenawaranData = [
     'totalRating': '111',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': '890daba4-fdae-4008-b4c7-6f2f700d2aff',
         'name': 'Hendri',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1451,7 +1445,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '2e4f9ace-f475-4a17-837e-bc6140026073',
         'name': 'Juli Nasyiah',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1462,7 +1456,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '3',
+        'id': '2',
         'GUID': '690be27e-f4eb-4bea-93bb-32f0b823adc9',
         'name': 'Tasya',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1494,9 +1488,10 @@ var SemuaPenawaranData = [
     'name': 'Diskon masker medis di Tokopedia',
     'poin': 'null',
     'description1':
-        'Berlaku untuk Take Away, Drive Thru, McDelivery website dan mobile, McDelivery 14045, Aplikasi McDelivery, GrabFood, GoFood.',
-    'description2': 'Pembelian menu lain dengan total minimal Rp25.000,00.',
-    'description3': 'Promo tidak berlaku kelipatan (satu per struk).',
+        'Berlaku untuk semua masker medis yang bersertifikasi oleh Kemenkes.',
+    'description2': 'Diskon pembelian tidak termasuk tarif pengiriman.',
+    'description3':
+        'Diskon hanya dapat digunakan 5x pemakaian selama persediaan masih ada.',
     'amount': '80%',
     'brand': 'Tokopedia',
     'logo': 'assets/logo/square/tokopedia.png',
@@ -1513,29 +1508,29 @@ var SemuaPenawaranData = [
     'totalRating': '168',
     'review': [
       {
-        'id': '1',
+        'id': '0',
         'GUID': '6147fa09-c2d8-4ce8-bfc0-a9fd76edaf87',
         'name': 'Prayoga',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
         'date': '6 hari yang lalu',
         'comment': 'Mau coba promo lain ah, yang lain works juga ga ya(?)',
         'rating': '4.5',
-        'likes': '101',
+        'likes': '1',
         'likeButton': false,
       },
       {
-        'id': '2',
+        'id': '1',
         'GUID': '00fe0e01-d419-4d6c-bb2b-a00b92a74acb',
         'name': 'Ami Agustina',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
         'date': '5 hari yang lalu',
         'comment': 'Beda banget sama lapak sebelah, disini trusted parah',
         'rating': '5.0',
-        'likes': '101',
+        'likes': '2',
         'likeButton': false,
       },
       {
-        'id': '3',
+        'id': '2',
         'GUID': '9d8d517f-986e-46e9-8ac4-85690d900ad5',
         'name': 'Wawan',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1547,7 +1542,7 @@ var SemuaPenawaranData = [
         'likeButton': false,
       },
       {
-        'id': '4',
+        'id': '3',
         'GUID': '1f855ca8-08c0-403f-ba03-e713b90e8321',
         'name': 'Yono Jailani',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
@@ -1597,27 +1592,26 @@ var SemuaPenawaranData = [
     'totalRating': '178',
     'review': [
       {
-        'id': '1',
-        'GUID': 'a0e4284a-8364-4958-8870-b995ebaa274e',
-        'name': 'Lica',
+        'id': '0',
+        'GUID': '517b44ae-bd65-4754-8bb5-9c1c3c43d97b',
+        'name': 'Doni Pinkanatalini',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
-        'comment':
-            'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
+        'comment': 'Wuaahh makasiii!',
         'rating': '5.0',
-        'likes': '101',
+        'likes': '7',
         'likeButton': false,
       },
       {
-        'id': '2',
-        'GUID': '4abd3dad-88ab-4f65-b89f-9888195720e0',
-        'name': 'Lica',
+        'id': '1',
+        'GUID': 'c45f3e50-46ce-4efc-aaed-50417265e478',
+        'name': 'Anas',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
-        'date': '1 hari yang lalu',
+        'date': '2 hari yang lalu',
         'comment':
-            'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
-        'rating': '5.0',
-        'likes': '101',
+            'Cari promo esklusif memang cuman ada disini aja, yang lain fake',
+        'rating': '4.5',
+        'likes': '0',
         'likeButton': false,
       },
     ]
@@ -1660,27 +1654,14 @@ var SemuaPenawaranData = [
     'totalRating': '244',
     'review': [
       {
-        'id': '1',
-        'GUID': '38ef15d2-79eb-4f17-a0ef-0cbb7cd6f90a',
-        'name': 'Lica',
+        'id': '0',
+        'GUID': '8bef94de-6d98-4950-91b0-db0260d8e200',
+        'name': 'Aldo Suritno',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
-        'comment':
-            'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
+        'comment': 'Good job caridiskon',
         'rating': '5.0',
-        'likes': '101',
-        'likeButton': false,
-      },
-      {
-        'id': '2',
-        'GUID': '704f6f05-e5e0-4200-829a-52ba38cf79b0',
-        'name': 'Lica',
-        'profilePicture': 'assets/image/profile_picture/default.jpeg',
-        'date': '1 hari yang lalu',
-        'comment':
-            'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
-        'rating': '5.0',
-        'likes': '101',
+        'likes': '3',
         'likeButton': false,
       },
     ]
@@ -1723,27 +1704,14 @@ var SemuaPenawaranData = [
     'totalRating': '589',
     'review': [
       {
-        'id': '1',
-        'GUID': '7e7fdaca-9086-470e-ab7d-05d6b34d15c2',
-        'name': 'Lica',
+        'id': '0',
+        'GUID': '8e11c8fe-4689-4d2d-858f-781b6e66abb5',
+        'name': 'Ray Dewanta',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
-        'date': '1 hari yang lalu',
-        'comment':
-            'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
+        'date': '3 hari yang lalu',
+        'comment': '10/10 !',
         'rating': '5.0',
-        'likes': '101',
-        'likeButton': false,
-      },
-      {
-        'id': '2',
-        'GUID': '8227d40b-1601-4776-88d4-448cb359eec5',
-        'name': 'Lica',
-        'profilePicture': 'assets/image/profile_picture/default.jpeg',
-        'date': '1 hari yang lalu',
-        'comment':
-            'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
-        'rating': '5.0',
-        'likes': '101',
+        'likes': '5',
         'likeButton': false,
       },
     ]
@@ -1779,34 +1747,21 @@ var SemuaPenawaranData = [
     'type': 'Kode',
     'status': 'Trending',
     'reward': '10',
-    'code': 'ABC123',
+    'code': 'LAD317',
     'website': 'null',
     'category': 'Lainnya',
     'rating': '4.7',
     'totalRating': '195',
     'review': [
       {
-        'id': '1',
-        'GUID': '533cac5a-e1eb-4066-82b3-f9cc892edc56',
-        'name': 'Lica',
+        'id': '0',
+        'GUID': 'e36a02b9-52cd-4ea8-a244-ea5895dd6579',
+        'name': 'Aufa Qodriyah',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
-        'date': '1 hari yang lalu',
-        'comment':
-            'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
+        'date': '2 hari yang lalu',
+        'comment': 'Mari trendingkan kawan...',
         'rating': '5.0',
-        'likes': '101',
-        'likeButton': false,
-      },
-      {
-        'id': '2',
-        'GUID': '04c62be1-3d6c-4ed2-a045-af2fa0892609',
-        'name': 'Lica',
-        'profilePicture': 'assets/image/profile_picture/default.jpeg',
-        'date': '1 hari yang lalu',
-        'comment':
-            'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
-        'rating': '5.0',
-        'likes': '101',
+        'likes': '37',
         'likeButton': false,
       },
     ]
@@ -1849,27 +1804,25 @@ var SemuaPenawaranData = [
     'totalRating': '171',
     'review': [
       {
-        'id': '1',
-        'GUID': '9fb8f1cd-7cf1-4ac5-96d8-b493e04e9e39',
-        'name': 'Lica',
+        'id': '0',
+        'GUID': 'a70274eb-c6ae-42e0-8d42-413ddf7f63ce',
+        'name': 'Ilyas Anindita',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
         'date': '1 hari yang lalu',
-        'comment':
-            'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
-        'rating': '5.0',
-        'likes': '101',
+        'comment': 'temenan ta?',
+        'rating': '3.5',
+        'likes': '3',
         'likeButton': false,
       },
       {
-        'id': '2',
-        'GUID': 'd4160225-1e63-46f4-b3df-c81ad522e878',
-        'name': 'Lica',
+        'id': '1',
+        'GUID': 'aa4bb2ea-b13c-4890-82aa-385aa48473a5',
+        'name': 'Aditya',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
-        'date': '1 hari yang lalu',
-        'comment':
-            'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
+        'date': '2 hari yang lalu',
+        'comment': 'pancen ril lur..',
         'rating': '5.0',
-        'likes': '101',
+        'likes': '1',
         'likeButton': false,
       },
     ]
@@ -1912,27 +1865,14 @@ var SemuaPenawaranData = [
     'totalRating': '107',
     'review': [
       {
-        'id': '1',
-        'GUID': '70a2c956-1b6a-432d-adbe-0546f96c1c0f',
-        'name': 'Lica',
+        'id': '0',
+        'GUID': '025b3684-c5ca-4dde-8212-90804e7f6c9d',
+        'name': 'Syahid',
         'profilePicture': 'assets/image/profile_picture/default.jpeg',
-        'date': '1 hari yang lalu',
-        'comment':
-            'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
+        'date': '2 hari yang lalu',
+        'comment': 'no komen lagi deh, warbiasah caridiskon',
         'rating': '5.0',
-        'likes': '101',
-        'likeButton': false,
-      },
-      {
-        'id': '2',
-        'GUID': '74d3f2fe-526b-4f4f-a44a-32fdd922a46b',
-        'name': 'Lica',
-        'profilePicture': 'assets/image/profile_picture/default.jpeg',
-        'date': '1 hari yang lalu',
-        'comment':
-            'Makasih, CariDiskon!! Aku traktir temen-temen jadi lebih hemat pakai kupon promo ini :D Mantap banget, deh!',
-        'rating': '5.0',
-        'likes': '101',
+        'likes': '29',
         'likeButton': false,
       },
     ]
